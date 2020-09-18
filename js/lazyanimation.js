@@ -1,1 +1,25 @@
-{let e=new IntersectionObserver((e,r)=>{e.forEach(e=>{e.isIntersecting&&(t(e.target),r.unobserve(e.target))})},{rootMargin:"50px 0px 50px 0px",threshold:0});document.querySelectorAll(".animation-lazy").forEach(t=>{e.observe(t)});const t=e=>{e.classList.add("active-animation")}}
+{
+	const config = {
+		rootMargin: "50px 0px 50px 0px",
+		threshold: 0,
+	};
+
+	let observer = new IntersectionObserver((entries, self) => {
+		entries.forEach((entry) => {
+			if (entry.isIntersecting) {
+				animation(entry.target);
+				self.unobserve(entry.target);
+			}
+		});
+	}, config);
+
+	const lazyElements = document.querySelectorAll(".animation-lazy");
+
+	lazyElements.forEach((el) => {
+		observer.observe(el);
+	});
+
+	const animation = (el) => {
+		el.classList.add("active-animation");
+	};
+}

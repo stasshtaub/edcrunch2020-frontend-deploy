@@ -11,7 +11,19 @@ if ("loading" in HTMLImageElement.prototype) {
 	document.body.appendChild(script);
 }
 
-{
+if (document.documentElement.classList.contains("is-browser-safari")) {
+	const customLazyElements = document.querySelectorAll(".custom-lazy-load");
+	customLazyElements.forEach((el) => {
+		loadImages(el);
+	});
+	const loadImages = (el) => {
+		const images = el.querySelectorAll("img");
+		images.forEach((img) => {
+			img.src = img.dataset.src;
+		});
+		el.classList.add("active-animation");
+	};
+} else {
 	const config = {
 		rootMargin: "50px 0px 50px 0px",
 		threshold: 0,
@@ -37,5 +49,6 @@ if ("loading" in HTMLImageElement.prototype) {
 		images.forEach((img) => {
 			img.src = img.dataset.src;
 		});
+		el.classList.add("active-animation");
 	};
 }
