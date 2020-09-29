@@ -27,9 +27,9 @@
 		<link rel="preload" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
 		<link rel="preload" href="fonts/HalvarStnclBreit-HlMaxG.woff2" as="font" type="font/woff2" crossorigin>
 		<link rel="preload" href="fonts/Halvar-Breitschrift-Medium.woff2" as="font" type="font/woff2" crossorigin>
-		<link rel="stylesheet" href="css/main.css?v=1601366748929">
-		<link rel="stylesheet" href="css/lk-header.css?v=1601366748929">
-		<link rel="stylesheet" href="css/jquery.fancybox.min.css?v=1601366748929">
+		<link rel="stylesheet" href="css/main.css?v=1601379804481">
+		<link rel="stylesheet" href="css/lk-header.css?v=1601379804481">
+		<link rel="stylesheet" href="css/jquery.fancybox.min.css?v=1601379804481">
 	</head>
 	<body>
 		<header class="lk__header">
@@ -111,6 +111,58 @@
 							<div class="container">
 								<div class="event-wrap">
 									<div class="event-wrap-main">
+										<div class="ticket__card">
+											<div class="ticket__card-img-top xs-hidden">
+												<picture>
+													<source media="(max-width: 767px)" srcset="images/simple.png"><img class="img-responsive lazyload" data-lazy="images/lk/ticket-card-img.png" srcset="images/lk/ticket-card-img.png 1x, images/lk/ticket-card-img@2x.png 2x" alt="#">
+												</picture>
+											</div>
+											<div class="ticket__card-content">
+												<div class="ticket__card-title">Мой билет</div>
+												<ul class="ticket__card-list">
+													<li class="ticket__card-item">
+														<div class="ticket__card-action"><a class="ticket__card-btn" href="#"><span>
+																	<svg class="icon-print">
+																		<use xlink:href="images/sprites.svg#icon-print"></use>
+																	</svg></span></a></div>
+														<div class="ticket__card-list-content"><a class="ticket__card-head ticketCardJs" href="#"><span class="ticket__card-head-content"><span class="ticket__card-head--top"><span class="ticket__card-head-top--title">Только первый день</span><span class="ticket__card-head-top--label">online</span></span><span class="ticket__card-head-time">11 ноября | 10:00–18:00 </span></span></a>
+															<div class="ticket__card-block ticketCardContentJs">
+																<p>Полный доступ к онлайн-платформе конференции в течение дня. Смотрите мероприятия по всем тематическим стримам, общайтесь с другими участниками в чатах, форумах и личной переписке.</p>
+																<p>Видеозаписи прошедших выступлений хранится на онлайн-платформе и будут доступны в течение года.</p>
+																<p>Доступ к EdCrunch Online Expo и нетворкингу — без ограничений.</p>
+																<div class="claer"></div><a class="btn-lk-border-white" href="#">Скачать билет</a>
+															</div>
+														</div>
+													</li>
+													<li class="ticket__card-item">
+														<div class="ticket__card-action"><a class="ticket__card-btn" href="#"><span>
+																	<svg class="icon-print">
+																		<use xlink:href="images/sprites.svg#icon-print"></use>
+																	</svg></span></a></div>
+														<div class="ticket__card-list-content"><a class="ticket__card-head ticketCardJs" href="#"><span class="ticket__card-head-content"><span class="ticket__card-head--top"><span class="ticket__card-head-top--title">Только второй день</span><span class="ticket__card-head-top--label">online</span></span><span class="ticket__card-head-time">12 ноября | 10:00–18:00 </span></span></a>
+															<div class="ticket__card-block ticketCardContentJs">
+																<p>Полный доступ к онлайн-платформе конференции в течение дня. Смотрите мероприятия по всем тематическим стримам, общайтесь с другими участниками в чатах, форумах и личной переписке.</p>
+																<p>Видеозаписи прошедших выступлений хранится на онлайн-платформе и будут доступны в течение года.</p>
+																<p>Доступ к EdCrunch Online Expo и нетворкингу — без ограничений.</p>
+															</div>
+														</div>
+													</li>
+													<li class="ticket__card-item">
+														<div class="ticket__card-action"><a class="ticket__card-btn is-active" href="#"><span>
+																	<svg class="icon-cart">
+																		<use xlink:href="images/sprites.svg#icon-cart"></use>
+																	</svg></span></a></div>
+														<div class="ticket__card-list-content"><a class="ticket__card-head ticketCardJs" href="#"><span class="ticket__card-head-content"><span class="ticket__card-head--top"><span class="ticket__card-head-top--title">Только третий день</span><span class="ticket__card-head-top--label">offline</span></span><span class="ticket__card-head-time">13 ноября | 10:00–18:00  </span></span></a>
+															<div class="ticket__card-block ticketCardContentJs">
+																<p>Полный доступ к онлайн-платформе конференции в течение дня. Смотрите мероприятия по всем тематическим стримам, общайтесь с другими участниками в чатах, форумах и личной переписке.</p>
+																<p>Видеозаписи прошедших выступлений хранится на онлайн-платформе и будут доступны в течение года.</p>
+																<p>Доступ к EdCrunch Online Expo и нетворкингу — без ограничений.</p>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
 										<div class="program__content-blocks program__content-lk">
 											<div class="agenda__program">
 												<div class="program__content-title">Мои Ближайшие мероприятия</div>
@@ -830,7 +882,7 @@
 					</div>
 				</div>
 			</div>
-		</div>
+		</div><a class="event-btn-help" href="#"></a>
 		<footer>
 			<div class="footer-sponsor">
 				<div class="container">
@@ -925,11 +977,11 @@
 				</div>
 			</div>
 		</footer>
-		<script src="js/lazyimage.js?v=1601366748929"></script>
-		<script src="js/lazyanimation.js?v=1601366748929"></script>
-		<script src="js/vendor.js?v=1601366748929"></script>
-		<script src="js/main.js?v=1601366748929"></script>
-		<script src="js/common.js?v=1601366748929"></script>
-		<script src="js/jquery.fancybox.min.js?v=1601366748929"></script>
+		<script src="js/lazyimage.js?v=1601379804481"></script>
+		<script src="js/lazyanimation.js?v=1601379804481"></script>
+		<script src="js/vendor.js?v=1601379804481"></script>
+		<script src="js/main.js?v=1601379804481"></script>
+		<script src="js/common.js?v=1601379804481"></script>
+		<script src="js/jquery.fancybox.min.js?v=1601379804481"></script>
 	</body>
 </html>

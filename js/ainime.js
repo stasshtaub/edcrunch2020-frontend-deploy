@@ -1,1 +1,171 @@
-function isMobile(){try{return document.createEvent("TouchEvent"),!0}catch(i){return!1}}isMobile()&&$("body").addClass("mobile"),$(document).ready((function(){$(".im-dote-js").on("click",(function(i){i.preventDefault();var e=$(window).outerWidth();if($("body").hasClass("mobile")||e>=768&&e<=1024||$("html").hasClass("is-device-mobile")||$("html").hasClass("is-device-tablet")){var o=$(this).closest(".immersion-block"),t=$(o).find(".immersion-block-mobile");if(t.is(":hidden")){var n=$(".full-immersion-content").find(".is-active");$(n).find(".immersion-block-mobile").hide(),$(n).removeClass("is-active"),$(o).addClass("is-active"),$(t).show()}else $(o).removeClass("is-active"),$(t).hide();i.stopPropagation()}})),$(".immersion-block-mobile").on("click",(function(i){i.stopPropagation()})),$("body").on("click",(function(){var i=$(".full-immersion-content").find(".is-active");$(i).find(".immersion-block-mobile").hide(),$(i).removeClass("is-active")})),$(".immersionMobileClick").on("click",(function(i){i.preventDefault();var e=$(this).closest(".immersion-block");if($(e).hasClass("is-show"))$(e).find(".immersion-block-mobile").animate({height:"20px"},300),setTimeout((function(){$(e).find(".immersion-block-mobile").removeAttr("style"),$(e).removeClass("is-show")}),310);else{var o=$(".full-immersion-content").find(".is-show");$(o).find(".immersion-block-mobile").animate({height:"20px"},300),setTimeout((function(){$(o).find(".immersion-block-mobile").removeAttr("style"),$(o).removeClass("is-show")}),310);var t=$(e).find(".immersion-mobile-text").outerHeight();$(e).find(".immersion-block-mobile").animate({height:t+"px"},300),setTimeout((function(){$(e).find(".immersion-block-mobile").removeAttr("style"),$(e).addClass("is-show")}),310)}}))}));let animation=null;function animationLotti(i){animation=bodymovin.loadAnimation({container:document.getElementById("lottie"),path:"json/circle-animation.json",renderer:"svg",loop:!0,autoplay:!0,name:"Hello World"}),$("#lottie").addClass("animationInit"),"destroy"===i&&(animation.destroy(),$("#lottie").removeClass("animationInit"))}try{function loadPageAnime(){if($(window).outerWidth()>=768&&animationLotti(),"IntersectionObserver"in window){let i=new IntersectionObserver(i=>{i[0].intersectionRatio>0?animation.play():animation.stop()},{rootMargin:"50px 0px 50px 0px",threshold:0});const e=document.getElementById("lottie");i.observe(e)}}function resizePageAnime(){$(window).outerWidth()>=768?$("#lottie").hasClass("animationInit")||animationLotti():animationLotti("destroy")}window.addEventListener("load",loadPageAnime),window.addEventListener("resize",resizePageAnime)}catch(i){}
+function isMobile() {
+	try {
+		document.createEvent("TouchEvent");
+		return true;
+	} catch (e) {
+		return false;
+	}
+}
+
+if (isMobile()) $("body").addClass("mobile");
+
+$(document).ready(function () {
+	$(".im-dote-js").on("click", function (funcImmersion) {
+		funcImmersion.preventDefault();
+		var windowWidth = $(window).outerWidth();
+
+		if (
+			$("body").hasClass("mobile") ||
+			(windowWidth >= 768 && windowWidth <= 1024) ||
+			$("html").hasClass("is-device-mobile") ||
+			$("html").hasClass("is-device-tablet")
+		) {
+			var immersionParent = $(this).closest(".immersion-block");
+			var immersionMobile = $(immersionParent).find(
+				".immersion-block-mobile"
+			);
+
+			if (immersionMobile.is(":hidden")) {
+				var immersionActive = $(".full-immersion-content").find(
+					".is-active"
+				);
+				$(immersionActive).find(".immersion-block-mobile").hide();
+				$(immersionActive).removeClass("is-active");
+
+				$(immersionParent).addClass("is-active");
+				$(immersionMobile).show();
+			} else {
+				$(immersionParent).removeClass("is-active");
+				$(immersionMobile).hide();
+			}
+
+			funcImmersion.stopPropagation();
+		}
+	});
+
+	$(".immersion-block-mobile").on("click", function (funcImmersion) {
+		funcImmersion.stopPropagation();
+	});
+	$("body").on("click", function () {
+		var immersionActive = $(".full-immersion-content").find(".is-active");
+		$(immersionActive).find(".immersion-block-mobile").hide();
+		$(immersionActive).removeClass("is-active");
+	});
+
+	$(".immersionMobileClick").on("click", function (e) {
+		e.preventDefault();
+		var parentImmersionBox = $(this).closest(".immersion-block");
+
+		if (!$(parentImmersionBox).hasClass("is-show")) {
+			var immersionOpen = $(".full-immersion-content").find(".is-show");
+			$(immersionOpen)
+				.find(".immersion-block-mobile")
+				.animate({ height: "20px" }, 300);
+			setTimeout(function () {
+				$(immersionOpen)
+					.find(".immersion-block-mobile")
+					.removeAttr("style");
+				$(immersionOpen).removeClass("is-show");
+			}, 310);
+
+			var mobileTextHeight = $(parentImmersionBox)
+				.find(".immersion-mobile-text")
+				.outerHeight();
+			$(parentImmersionBox)
+				.find(".immersion-block-mobile")
+				.animate({ height: mobileTextHeight + "px" }, 300);
+			setTimeout(function () {
+				$(parentImmersionBox)
+					.find(".immersion-block-mobile")
+					.removeAttr("style");
+				$(parentImmersionBox).addClass("is-show");
+			}, 310);
+		} else {
+			$(parentImmersionBox)
+				.find(".immersion-block-mobile")
+				.animate({ height: "20px" }, 300);
+			setTimeout(function () {
+				$(parentImmersionBox)
+					.find(".immersion-block-mobile")
+					.removeAttr("style");
+				$(parentImmersionBox).removeClass("is-show");
+			}, 310);
+		}
+	});
+}); //- end ready
+
+let animation = null;
+let canvas = null;
+let context = null;
+
+function animationLotti(methods) {
+	animation = lottie.loadAnimation({
+		path: "json/circle-animation.json", // Required
+		renderer: "canvas", // Required
+		loop: true, // Optional
+		autoplay: true, // Optional
+		name: "Hello World", // Name for future reference. Optional.
+		rendererSettings: { context },
+	});
+	$("#lottie").addClass("animationInit");
+
+	if (methods === "destroy") {
+		animation.destroy();
+		$("#lottie").removeClass("animationInit");
+	}
+}
+
+function initCanvas(){
+	if (!context) {
+		canvas = document.querySelector(".lottie-canvas");
+		canvas.width = 1920;
+		canvas.height = 1566;
+		context = canvas.getContext("2d");
+	}
+}
+
+try {
+	function loadPageAnime() {
+
+		var windowWidth = $(window).outerWidth();
+
+		if (windowWidth >= 768) {
+			initCanvas();
+			animationLotti();
+		}
+
+		if ("IntersectionObserver" in window) {
+			const config = {
+				rootMargin: "50px 0px 50px 0px",
+				threshold: 0,
+			};
+
+			let observer = new IntersectionObserver((entries) => {
+				if (entries[0].intersectionRatio > 0) {
+					animation.play();
+				} else {
+					animation.stop();
+				}
+			}, config);
+
+			const lottieContainer = document.getElementById("lottie");
+			observer.observe(lottieContainer);
+		}
+	} //end loadPageAnime
+	window.addEventListener("load", loadPageAnime);
+
+	// participantsSlider
+
+	function resizePageAnime() {
+		var windowWidth = $(window).outerWidth();
+		if (windowWidth >= 768) {
+			if (!$("#lottie").hasClass("animationInit")) {
+				initCanvas();
+				animationLotti();
+			}
+		} else {
+			animationLotti("destroy");
+		}
+	} //end resizePageAnime
+	window.addEventListener("resize", resizePageAnime);
+} catch (e) {}
