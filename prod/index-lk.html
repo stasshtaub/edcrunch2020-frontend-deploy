@@ -1,0 +1,1150 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<title>EdCrunch 2020</title>
+		<link rel="apple-touch-icon" href="images/touch/apple-icon-57x57.png" sizes="57x57">
+		<link rel="apple-touch-icon" href="images/touch/apple-icon-60x60.png" sizes="60x60">
+		<link rel="apple-touch-icon" href="images/touch/apple-icon-72x72.png" sizes="72x72">
+		<link rel="apple-touch-icon" href="images/touch/apple-icon-76x76.png" sizes="76x76">
+		<link rel="apple-touch-icon" href="images/touch/apple-icon-114x114.png" sizes="114x114">
+		<link rel="apple-touch-icon" href="images/touch/apple-icon-120x120.png" sizes="120x120">
+		<link rel="apple-touch-icon" href="images/touch/apple-icon-144x144.png" sizes="144x144">
+		<link rel="apple-touch-icon" href="images/touch/apple-icon-152x152.png" sizes="152x152">
+		<link rel="apple-touch-icon" href="images/touch/apple-icon-180x180.png" sizes="180x180">
+		<link rel="icon" href="favicon.ico">
+		<link rel="icon" href="images/touch/favicon-16x16.png" sizes="16x16">
+		<link rel="icon" href="images/touch/favicon-32x32.png" sizes="32x32">
+		<link rel="icon" href="images/touch/favicon-96x96.png" sizes="96x96">
+		<link rel="icon" href="images/touch/android-icon-192x192.png" sizes="196x196">
+		<link rel="manifest" href="images/touch/manifest.json">
+		<link rel="preload" href="fonts/HalvarBreit-Bd.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload" href="fonts/HalvarBreit-Rg.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="stylesheet" href="css/critical-fonts.css">
+		<link rel="preload" href="fonts/Inter-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload" href="fonts/HalvarStnclBreit-HlMaxG.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload" href="fonts/Halvar-Breitschrift-Medium.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="stylesheet" href="css/main.css?v=1601538706327">
+		<link rel="stylesheet" href="css/lk-header.css?v=1601538706327">
+		<link rel="stylesheet" href="css/jquery.fancybox.min.css?v=1601538706327">
+	</head>
+	<body>
+		<header class="lk__header">
+			<div class="lk-panel-top">
+				<div class="lk-panel-top__container container">
+					<div class="lk-panel-top__wrp"><a class="lk-panel-top__back-link lk-panel-top__link" href="#"><span class="lk-panel-top__back-icon"></span><span class="lk-panel-top__back-text lk-panel-top__back-text--full">Назад на сайт</span><span class="lk-panel-top__back-text lk-panel-top__back-text--short">На сайт</span></a></div>
+					<div class="lk-panel-top__wrp"><a class="lk-panel-top__language lk-panel-top__link" href="#">
+							<svg class="lk-panel-top__language-icon">
+								<use xlink:href="images/sprites.svg#icon-language"></use>
+							</svg><span class="lk-panel-top__language-text">Ru</span></a><a class="lk-panel-top__notifications lk-panel-top__notifications--alert" href="#"></a>
+						<input class="lk-panel-top__profile-checkbox" id="lk-panel-top__profile-checkbox" type="checkbox" name="lk-panel-top__profile-checkbox">
+						<label class="lk-panel-top__profile" for="lk-panel-top__profile-checkbox">
+							<div class="lk-panel-top__avatar"><img class="lk-panel-top__avatar-img"><span class="lk-panel-top__avatar-text">НЩ</span></div><span class="lk-panel-top__username">Николай</span>
+							<svg class="lk-panel-top__down-arrow">
+								<use xlink:href="images/sprites.svg#icon-arrow-down-white"></use>
+							</svg>
+							<ul class="lk-panel-top__profile-dropdown">
+								<li class="lk-panel-top__dropdown-item"><a class="lk-panel-top__dropdown-link" href="#">Личный кабинет</a></li>
+								<li class="lk-panel-top__dropdown-item"><a class="lk-panel-top__dropdown-link" href="#">Настройки</a></li>
+								<li class="lk-panel-top__dropdown-item"><a class="lk-panel-top__dropdown-link" href="#">Выход</a></li>
+							</ul>
+						</label>
+					</div>
+				</div>
+			</div>
+		</header>
+		<div class="page-content page-child">
+			<div class="header-container">
+				<div class="container">
+					<div class="lk-navbar"><a class="lk-navbar__logo-link" href="#"><img class="lk-navbar__logo" src="images/sprites/svg/logo-child.svg"></a>
+						<div class="lk-navbar__menu">
+							<ul class="lk-navbar__menu-list">
+								<li class="lk-navbar__menu-item"><a class="lk-navbar__menu-link--active lk-navbar__menu-link" href="#">Главная</a>
+								</li>
+								<li class="lk-navbar__menu-item"><a class="lk-navbar__menu-link" href="#">Мой профиль</a>
+								</li>
+								<li class="lk-navbar__menu-item"><a class="lk-navbar__menu-link" href="#">Моя программа</a>
+									<div class="lk-navbar__menu-count">27</div>
+								</li>
+								<li class="lk-navbar__menu-item"><a class="lk-navbar__menu-link" href="#">Нетворкинг</a>
+								</li>
+								<li class="lk-navbar__menu-item"><a class="lk-navbar__menu-link" href="#">Выставка</a>
+								</li>
+							</ul>
+							<div class="lk-navbar__search-container">
+								<input class="lk-navbar__search-checkbox" type="checkbox" id="openSearch">
+								<label class="lk-navbar__search-btn" for="openSearch">
+									<svg class="lk-navbar__search-icon">
+										<use xlink:href="images/sprites.svg#magnifer-black"></use>
+									</svg>
+								</label>
+								<label class="lk-navbar__backdrop" for="openSearch"></label>
+								<input class="lk-navbar__search-input" type="search" id="lk-navbar__search-input">
+							</div>
+							<div class="lk-navbar__hamburger">
+								<input class="lk-navbar__hamburger-checkbox" type="checkbox" id="lk-navbar__hamburger-checkbox">
+								<label class="lk-navbar__hamburger-icon" for="lk-navbar__hamburger-checkbox"></label>
+								<label class="lk-navbar__backdrop" for="lk-navbar__hamburger-checkbox"></label>
+								<div class="lk-navbar__hamburger-menu">
+									<div class="lk-navbar__hamburger-header">
+										<p class="lk-navbar__hamburger-title">Меню</p>
+										<label class="lk-navbar__hamburger-close-btn" for="lk-navbar__hamburger-checkbox">
+											<svg class="lk-navbar__hamburger-close-icon">
+												<use xlink:href="images/sprites.svg#icon-close-white"></use>
+											</svg>
+										</label>
+									</div>
+									<ul class="lk-navbar__hamburger-list">
+										<li class="lk-navbar__hamburger-item"><a class="lk-navbar__hamburger-link--active lk-navbar__hamburger-link" href="#">Главная</a></li>
+										<li class="lk-navbar__hamburger-item"><a class="lk-navbar__hamburger-link" href="#">Мой профиль</a></li>
+										<li class="lk-navbar__hamburger-item"><a class="lk-navbar__hamburger-link" href="#">Моя программа
+												<div class="lk-navbar__menu-count">27</div></a></li>
+										<li class="lk-navbar__hamburger-item"><a class="lk-navbar__hamburger-link" href="#">Нетворкинг</a></li>
+										<li class="lk-navbar__hamburger-item"><a class="lk-navbar__hamburger-link" href="#">Выставка</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="wrapper">
+				<div class="page-child-content">
+					<div class="container">
+						<div class="page-events page-lk">
+							<div class="container">
+								<div class="event-wrap">
+									<div class="event-wrap-main">
+										<div class="ticket__card">
+											<div class="ticket__card-img-top xs-hidden">
+												<picture>
+													<source media="(max-width: 767px)" srcset="images/simple.png"><img class="img-responsive lazyload" data-lazy="images/lk/ticket-card-img.png" srcset="images/lk/ticket-card-img.png 1x, images/lk/ticket-card-img@2x.png 2x" alt="#">
+												</picture>
+											</div>
+											<div class="ticket__card-content">
+												<div class="ticket__card-title">Мой билет</div>
+												<ul class="ticket__card-list">
+													<li class="ticket__card-item">
+														<div class="ticket__card-action"><a class="ticket__card-btn" href="#"><span>
+																	<svg class="icon-print">
+																		<use xlink:href="images/sprites.svg#icon-print"></use>
+																	</svg></span></a></div>
+														<div class="ticket__card-list-content"><a class="ticket__card-head ticketCardJs" href="#"><span class="ticket__card-head-content"><span class="ticket__card-head--top"><span class="ticket__card-head-top--title">Только первый день</span><span class="ticket__card-head-top--label">online</span></span><span class="ticket__card-head-time">11 ноября | 10:00–18:00 </span></span></a>
+															<div class="ticket__card-block ticketCardContentJs">
+																<p>Полный доступ к онлайн-платформе конференции в течение дня. Смотрите мероприятия по всем тематическим стримам, общайтесь с другими участниками в чатах, форумах и личной переписке.</p>
+																<p>Видеозаписи прошедших выступлений хранится на онлайн-платформе и будут доступны в течение года.</p>
+																<p>Доступ к EdCrunch Online Expo и нетворкингу — без ограничений.</p>
+																<div class="claer"></div><a class="btn-lk-border-white" href="#">Скачать билет</a>
+															</div>
+														</div>
+													</li>
+													<li class="ticket__card-item">
+														<div class="ticket__card-action"><a class="ticket__card-btn" href="#"><span>
+																	<svg class="icon-print">
+																		<use xlink:href="images/sprites.svg#icon-print"></use>
+																	</svg></span></a></div>
+														<div class="ticket__card-list-content"><a class="ticket__card-head ticketCardJs" href="#"><span class="ticket__card-head-content"><span class="ticket__card-head--top"><span class="ticket__card-head-top--title">Только второй день</span><span class="ticket__card-head-top--label">online</span></span><span class="ticket__card-head-time">12 ноября | 10:00–18:00 </span></span></a>
+															<div class="ticket__card-block ticketCardContentJs">
+																<p>Полный доступ к онлайн-платформе конференции в течение дня. Смотрите мероприятия по всем тематическим стримам, общайтесь с другими участниками в чатах, форумах и личной переписке.</p>
+																<p>Видеозаписи прошедших выступлений хранится на онлайн-платформе и будут доступны в течение года.</p>
+																<p>Доступ к EdCrunch Online Expo и нетворкингу — без ограничений.</p>
+															</div>
+														</div>
+													</li>
+													<li class="ticket__card-item">
+														<div class="ticket__card-action"><a class="ticket__card-btn is-active" href="#"><span>
+																	<svg class="icon-cart">
+																		<use xlink:href="images/sprites.svg#icon-cart"></use>
+																	</svg></span></a></div>
+														<div class="ticket__card-list-content"><a class="ticket__card-head ticketCardJs" href="#"><span class="ticket__card-head-content"><span class="ticket__card-head--top"><span class="ticket__card-head-top--title">Только третий день</span><span class="ticket__card-head-top--label">offline</span></span><span class="ticket__card-head-time">13 ноября | 10:00–18:00  </span></span></a>
+															<div class="ticket__card-block ticketCardContentJs">
+																<p>Полный доступ к онлайн-платформе конференции в течение дня. Смотрите мероприятия по всем тематическим стримам, общайтесь с другими участниками в чатах, форумах и личной переписке.</p>
+																<p>Видеозаписи прошедших выступлений хранится на онлайн-платформе и будут доступны в течение года.</p>
+																<p>Доступ к EdCrunch Online Expo и нетворкингу — без ограничений.</p>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+										</div>
+										<div class="program__content-blocks program__content-lk">
+											<div class="agenda__program">
+												<div class="program__content-title">Мои Ближайшие мероприятия</div>
+												<div class="clear"></div>
+												<div class="content-block-start-in">НАЧАЛО ЧЕРЕЗ <span>15 дней</span></div>
+												<ul class="program__content-date">
+													<li class="is-active"><span>11 ноября</span></li>
+													<li><span>10:00–10:40</span></li>
+												</ul>
+												<div class="agenda__program-event agendaProgramBlock">
+													<div class="agenda__program-event-hashtag-header">
+														<div class="agenda__program-event-special-time">
+															<div class="agenda__program-event-special-time-text">11 ноября, 10:00–10:40</div>
+														</div>
+														<div class="agenda__program-event-hashtag-header-right">
+															<div class="agenda__program-event-hashtag-work">
+																<div class="hashtag-work-online-icon"></div>
+																<div class="hashtag-work-online-text">EdCrunch Stage</div>
+															</div>
+															<div class="agenda__program-event-hashtag-room">
+																<div class="hashtag-work-online-text">ЗАЛ «АМФИТЕАТР»</div>
+															</div>
+														</div>
+													</div>
+													<div class="agenda__program-event-hashtag-content">
+														<div class="agenda__program-content-left">
+															<div class="agenda__program-content-top">
+																<div class="agenda__program-event-name"><a href="#">Торжественное награждение победителей конкурсов EDCRUNCH AWARD OOC, EDCRUNCH AWARD PRODUCT, EDCRUNCH AWARD OEC, GESA RUSSIA</a></div>
+																<div class="agenda__program-content-right">
+																	<div class="event-live-label event-live-label-program event-live-label-v2">
+																		<div class="icon-live-box"></div>
+																		<div class="icon-live-text">Live</div>
+																	</div>
+																</div>
+															</div>
+															<div class="agenda__program-event-box">
+																<ul class="agenda__program-event-box-list agendaProgramList">
+																	<li><a href="#"><span class="agenda__program-event-person-img"><img class="lazyload img-responsive" data-src="images/person/2.png" alt="#" title="#" srcset="images/person/2@2x.png 2x, images/person/2@3x.png 3x" loading="lazy"></span><span class="agenda__program-event-person-text"><span>Дмитрий Песков</span>, специальный представитель Президента Российской Федерации по вопросам цифрового и технологического развития</span></a></li>
+																	<li><a href="#"><span class="agenda__program-event-person-img"><img class="lazyload img-responsive" data-src="images/person/1.png" alt="#" title="#" srcset="images/person/1@2x.png 2x, images/person/1@3x.png 3x" loading="lazy"></span><span class="agenda__program-event-person-text"><span>Алевтина Черникова</span>, ректор НИТУ «МИСиС»</span></a></li>
+																	<li><a href="#"><span class="agenda__program-event-person-img"><img class="lazyload img-responsive" data-src="images/person/3.png" alt="#" title="#" srcset="images/person/3@2x.png 2x, images/person/3@3x.png 3x" loading="lazy"></span><span class="agenda__program-event-person-text"><span>Аркадий Дворкович</span>, председатель Фонда «Сколково»</span></a></li>
+																	<li><a href="#"><span class="agenda__program-event-person-img"><img class="lazyload img-responsive" data-src="images/person/2.png" alt="#" title="#" srcset="images/person/2@2x.png 2x, images/person/2@3x.png 3x" loading="lazy"></span><span class="agenda__program-event-person-text"><span>Аркадий Дворкович</span>, председатель Фонда «Сколково»</span></a></li>
+																</ul>
+															</div>
+														</div>
+													</div>
+													<div class="agenda__program-action"><a class="btnSpeakersShow" href="#" data-text="Все спикеры" data-change="Свернуть" data-height="115">Все спикеры</a></div>
+													<div class="agenda__program-event-hashtag-footer">
+														<div class="agenda__program-event-hashtag-footer-left">
+															<div class="agenda__program-event-hashtag-list">
+																<div class="agenda__program-event-hashtag is-sch">
+																	<div class="agenda__program-event-hashtag-icon">sch</div>
+																	<div class="agenda__program-event-hashtag-text xs-hidden"> школьное образование</div>
+																</div>
+																<div class="agenda__program-event-hashtag is-workshop">мастер-класс</div>
+															</div>
+														</div>
+														<div class="agenda__program-event-hashtag-footer-right">
+															<div class="agenda__program-event-group">
+																<div class="agenda__program-event-group-btn"><a class="agenda__program-event-btn" href="#">Добавить</a></div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="agenda__program-event agendaProgramBlock">
+													<div class="agenda__program-event-hashtag-header">
+														<div class="agenda__program-event-special-time">
+															<div class="agenda__program-event-special-time-text">11 ноября, 10:00–10:40</div>
+														</div>
+														<div class="agenda__program-event-hashtag-header-right">
+															<div class="agenda__program-event-hashtag-work">
+																<div class="hashtag-work-online-icon"></div>
+																<div class="hashtag-work-online-text">EdCrunch Stage</div>
+															</div>
+															<div class="agenda__program-event-hashtag-room">
+																<div class="hashtag-work-online-text">ЗАЛ «АМФИТЕАТР»</div>
+															</div>
+														</div>
+													</div>
+													<div class="agenda__program-event-hashtag-content">
+														<div class="agenda__program-content-left">
+															<div class="agenda__program-content-top">
+																<div class="agenda__program-event-name"><a href="#">Торжественное награждение победителей конкурсов EDCRUNCH AWARD OOC, EDCRUNCH AWARD PRODUCT, EDCRUNCH AWARD OEC, GESA RUSSIA</a></div>
+																<div class="agenda__program-content-right">
+																	<div class="agenda__program-event-group-count">
+																		<div class="agenda__program-event-group-count-box">215</div>
+																	</div>
+																</div>
+															</div>
+															<div class="agenda__program-event-box">
+																<ul class="agenda__program-event-box-list agendaProgramList">
+																	<li><a href="#"><span class="agenda__program-event-person-img"><img class="lazyload img-responsive" data-src="images/person/2.png" alt="#" title="#" srcset="images/person/2@2x.png 2x, images/person/2@3x.png 3x" loading="lazy"></span><span class="agenda__program-event-person-text"><span>Дмитрий Песков</span>, специальный представитель Президента Российской Федерации по вопросам цифрового и технологического развития</span></a></li>
+																	<li><a href="#"><span class="agenda__program-event-person-img"><img class="lazyload img-responsive" data-src="images/person/1.png" alt="#" title="#" srcset="images/person/1@2x.png 2x, images/person/1@3x.png 3x" loading="lazy"></span><span class="agenda__program-event-person-text"><span>Алевтина Черникова</span>, ректор НИТУ «МИСиС»</span></a></li>
+																	<li><a href="#"><span class="agenda__program-event-person-img"><img class="lazyload img-responsive" data-src="images/person/3.png" alt="#" title="#" srcset="images/person/3@2x.png 2x, images/person/3@3x.png 3x" loading="lazy"></span><span class="agenda__program-event-person-text"><span>Аркадий Дворкович</span>, председатель Фонда «Сколково»</span></a></li>
+																	<li><a href="#"><span class="agenda__program-event-person-img"><img class="lazyload img-responsive" data-src="images/person/2.png" alt="#" title="#" srcset="images/person/2@2x.png 2x, images/person/2@3x.png 3x" loading="lazy"></span><span class="agenda__program-event-person-text"><span>Аркадий Дворкович</span>, председатель Фонда «Сколково»</span></a></li>
+																</ul>
+															</div>
+														</div>
+													</div>
+													<div class="agenda__program-action"><a class="btnSpeakersShow" href="#" data-text="Все спикеры" data-change="Свернуть" data-height="115">Все спикеры</a></div>
+													<div class="agenda__program-event-hashtag-footer">
+														<div class="agenda__program-event-hashtag-footer-left">
+															<div class="agenda__program-event-hashtag-list">
+																<div class="agenda__program-event-hashtag is-sch">
+																	<div class="agenda__program-event-hashtag-icon">sch</div>
+																	<div class="agenda__program-event-hashtag-text xs-hidden"> школьное образование</div>
+																</div>
+																<div class="agenda__program-event-hashtag is-workshop">мастер-класс</div>
+															</div>
+														</div>
+														<div class="agenda__program-event-hashtag-footer-right">
+															<div class="agenda__program-event-group">
+																<div class="agenda__program-event-group-btn"><a class="agenda__program-event-btn" href="#">Добавить</a></div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<ul class="program__content-date">
+													<li class="is-active"><span>11 ноября</span></li>
+													<li><span>10:00–10:40</span></li>
+												</ul>
+												<div class="agenda__program-event program-add">
+													<div class="agenda__program-event-hashtag-header">
+														<div class="agenda__program-event-special-time">
+															<div class="agenda__program-event-special-time-text">11 ноября, 10:00–10:40</div>
+														</div>
+														<div class="agenda__program-event-special-time program-event-add-title">
+															<div class="agenda__program-event-special-time-text">Вы ещё не заполнили это время</div>
+														</div>
+														<div class="agenda__program-event-special-time">
+															<div class="agenda__program-event-special-time-text">Как вы хотите его провести?</div>
+														</div>
+													</div>
+													<div class="agenda__program-event-hashtag-content">
+														<ul class="program__add-btn-list">
+															<li><a class="program__add-btn" href="#">Выбрать сессию</a></li>
+															<li><a class="program__add-btn" href="#">Общаться с участниками</a></li>
+															<li><a class="program__add-btn" href="#">Ничем не занимать</a></li>
+														</ul>
+													</div>
+												</div>
+												<ul class="program__content-date">
+													<li class="is-active"><span>11 ноября</span></li>
+													<li><span>10:00–10:40</span></li>
+												</ul>
+												<div class="agenda__program-event agendaProgramBlock">
+													<div class="agenda__program-event-hashtag-header">
+														<div class="agenda__program-event-special-time">
+															<div class="agenda__program-event-special-time-text">11 ноября, 10:00–10:40</div>
+														</div>
+														<div class="agenda__program-event-hashtag-header-right">
+															<div class="agenda__program-event-hashtag-work">
+																<div class="hashtag-work-online-icon"></div>
+																<div class="hashtag-work-online-text">EdCrunch Stage</div>
+															</div>
+															<div class="agenda__program-event-hashtag-room">
+																<div class="hashtag-work-online-text">ЗАЛ «АМФИТЕАТР»</div>
+															</div>
+														</div>
+													</div>
+													<div class="agenda__program-event-hashtag-content">
+														<div class="agenda__program-content-left">
+															<div class="agenda__program-content-top">
+																<div class="agenda__program-event-name"><a href="#">Торжественное награждение победителей конкурсов EDCRUNCH AWARD OOC, EDCRUNCH AWARD PRODUCT, EDCRUNCH AWARD OEC, GESA RUSSIA</a></div>
+																<div class="agenda__program-content-right">
+																	<div class="agenda__program-event-group-count">
+																		<div class="agenda__program-event-group-count-box">215</div>
+																	</div>
+																</div>
+															</div>
+															<div class="agenda__program-event-box">
+																<ul class="agenda__program-event-box-list agendaProgramList">
+																	<li><a href="#"><span class="agenda__program-event-person-img"><img class="lazyload img-responsive" data-src="images/person/2.png" alt="#" title="#" srcset="images/person/2@2x.png 2x, images/person/2@3x.png 3x" loading="lazy"></span><span class="agenda__program-event-person-text"><span>Дмитрий Песков</span>, специальный представитель Президента Российской Федерации по вопросам цифрового и технологического развития</span></a></li>
+																	<li><a href="#"><span class="agenda__program-event-person-img"><img class="lazyload img-responsive" data-src="images/person/1.png" alt="#" title="#" srcset="images/person/1@2x.png 2x, images/person/1@3x.png 3x" loading="lazy"></span><span class="agenda__program-event-person-text"><span>Алевтина Черникова</span>, ректор НИТУ «МИСиС»</span></a></li>
+																	<li><a href="#"><span class="agenda__program-event-person-img"><img class="lazyload img-responsive" data-src="images/person/3.png" alt="#" title="#" srcset="images/person/3@2x.png 2x, images/person/3@3x.png 3x" loading="lazy"></span><span class="agenda__program-event-person-text"><span>Аркадий Дворкович</span>, председатель Фонда «Сколково»</span></a></li>
+																	<li><a href="#"><span class="agenda__program-event-person-img"><img class="lazyload img-responsive" data-src="images/person/2.png" alt="#" title="#" srcset="images/person/2@2x.png 2x, images/person/2@3x.png 3x" loading="lazy"></span><span class="agenda__program-event-person-text"><span>Аркадий Дворкович</span>, председатель Фонда «Сколково»</span></a></li>
+																</ul>
+															</div>
+														</div>
+													</div>
+													<div class="agenda__program-action"><a class="btnSpeakersShow" href="#" data-text="Все спикеры" data-change="Свернуть" data-height="115">Все спикеры</a></div>
+													<div class="agenda__program-event-hashtag-footer">
+														<div class="agenda__program-event-hashtag-footer-left">
+															<div class="agenda__program-event-hashtag-list">
+																<div class="agenda__program-event-hashtag is-sch">
+																	<div class="agenda__program-event-hashtag-icon">sch</div>
+																	<div class="agenda__program-event-hashtag-text xs-hidden"> школьное образование</div>
+																</div>
+																<div class="agenda__program-event-hashtag is-workshop">мастер-класс</div>
+															</div>
+														</div>
+														<div class="agenda__program-event-hashtag-footer-right">
+															<div class="agenda__program-event-group">
+																<div class="agenda__program-event-group-btn"><a class="agenda__program-event-btn" href="#">Добавить</a></div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="agenda__program-event agendaProgramBlock">
+													<div class="agenda__program-event-hashtag-header">
+														<div class="agenda__program-event-special-time">
+															<div class="agenda__program-event-special-time-text">11 ноября, 10:00–10:40</div>
+														</div>
+														<div class="agenda__program-event-hashtag-header-right">
+															<div class="agenda__program-event-hashtag-work">
+																<div class="hashtag-work-online-icon"></div>
+																<div class="hashtag-work-online-text">EdCrunch Stage</div>
+															</div>
+															<div class="agenda__program-event-hashtag-room">
+																<div class="hashtag-work-online-text">ЗАЛ «АМФИТЕАТР»</div>
+															</div>
+														</div>
+													</div>
+													<div class="agenda__program-event-hashtag-content">
+														<div class="agenda__program-content-left">
+															<div class="agenda__program-content-top">
+																<div class="agenda__program-event-name"><a href="#">Торжественное награждение победителей конкурсов EDCRUNCH AWARD OOC, EDCRUNCH AWARD PRODUCT, EDCRUNCH AWARD OEC, GESA RUSSIA</a></div>
+																<div class="agenda__program-content-right">
+																	<div class="agenda__program-event-group-count">
+																		<div class="agenda__program-event-group-count-box">215</div>
+																	</div>
+																</div>
+															</div>
+															<div class="agenda__program-event-box">
+																<ul class="agenda__program-event-box-list agendaProgramList">
+																	<li><a href="#"><span class="agenda__program-event-person-img"><img class="lazyload img-responsive" data-src="images/person/2.png" alt="#" title="#" srcset="images/person/2@2x.png 2x, images/person/2@3x.png 3x" loading="lazy"></span><span class="agenda__program-event-person-text"><span>Дмитрий Песков</span>, специальный представитель Президента Российской Федерации по вопросам цифрового и технологического развития</span></a></li>
+																	<li><a href="#"><span class="agenda__program-event-person-img"><img class="lazyload img-responsive" data-src="images/person/1.png" alt="#" title="#" srcset="images/person/1@2x.png 2x, images/person/1@3x.png 3x" loading="lazy"></span><span class="agenda__program-event-person-text"><span>Алевтина Черникова</span>, ректор НИТУ «МИСиС»</span></a></li>
+																	<li><a href="#"><span class="agenda__program-event-person-img"><img class="lazyload img-responsive" data-src="images/person/3.png" alt="#" title="#" srcset="images/person/3@2x.png 2x, images/person/3@3x.png 3x" loading="lazy"></span><span class="agenda__program-event-person-text"><span>Аркадий Дворкович</span>, председатель Фонда «Сколково»</span></a></li>
+																	<li><a href="#"><span class="agenda__program-event-person-img"><img class="lazyload img-responsive" data-src="images/person/2.png" alt="#" title="#" srcset="images/person/2@2x.png 2x, images/person/2@3x.png 3x" loading="lazy"></span><span class="agenda__program-event-person-text"><span>Аркадий Дворкович</span>, председатель Фонда «Сколково»</span></a></li>
+																</ul>
+															</div>
+														</div>
+													</div>
+													<div class="agenda__program-action"><a class="btnSpeakersShow" href="#" data-text="Все спикеры" data-change="Свернуть" data-height="115">Все спикеры</a></div>
+													<div class="agenda__program-event-hashtag-footer">
+														<div class="agenda__program-event-hashtag-footer-left">
+															<div class="agenda__program-event-hashtag-list">
+																<div class="agenda__program-event-hashtag is-sch">
+																	<div class="agenda__program-event-hashtag-icon">sch</div>
+																	<div class="agenda__program-event-hashtag-text xs-hidden"> школьное образование</div>
+																</div>
+																<div class="agenda__program-event-hashtag is-workshop">мастер-класс</div>
+															</div>
+														</div>
+														<div class="agenda__program-event-hashtag-footer-right">
+															<div class="agenda__program-event-group">
+																<div class="agenda__program-event-group-btn"><a class="agenda__program-event-btn" href="#">Добавить</a></div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="agenda__program-event program-add program-lunch">
+													<div class="agenda__program-event-hashtag-header">
+														<div class="agenda__program-event-special-time">
+															<div class="agenda__program-event-special-time-text">11 ноября, 10:00–10:40</div>
+														</div>
+														<div class="agenda__program-event-special-time program-event-add-title">
+															<div class="agenda__program-event-special-time-text">Перерыв на обед. Советуем подкрепиться!</div>
+														</div>
+													</div>
+												</div>
+												<div class="agenda__program-event agendaProgramBlock">
+													<div class="agenda__program-event-hashtag-header">
+														<div class="agenda__program-event-special-time">
+															<div class="agenda__program-event-special-time-text">11 ноября, 10:00–10:40</div>
+														</div>
+														<div class="agenda__program-event-hashtag-header-right">
+															<div class="agenda__program-event-hashtag-work">
+																<div class="hashtag-work-online-icon"></div>
+																<div class="hashtag-work-online-text">EdCrunch Stage</div>
+															</div>
+															<div class="agenda__program-event-hashtag-room">
+																<div class="hashtag-work-online-text">ЗАЛ «АМФИТЕАТР»</div>
+															</div>
+														</div>
+													</div>
+													<div class="agenda__program-event-hashtag-content">
+														<div class="agenda__program-content-left">
+															<div class="agenda__program-content-top">
+																<div class="agenda__program-event-name"><a href="#">Торжественное награждение победителей конкурсов EDCRUNCH AWARD OOC, EDCRUNCH AWARD PRODUCT, EDCRUNCH AWARD OEC, GESA RUSSIA</a></div>
+																<div class="agenda__program-content-right">
+																	<div class="agenda__program-event-group-count">
+																		<div class="agenda__program-event-group-count-box">215</div>
+																	</div>
+																</div>
+															</div>
+															<div class="agenda__program-event-box">
+																<ul class="agenda__program-event-box-list agendaProgramList">
+																	<li><a href="#"><span class="agenda__program-event-person-img"><img class="lazyload img-responsive" data-src="images/person/2.png" alt="#" title="#" srcset="images/person/2@2x.png 2x, images/person/2@3x.png 3x" loading="lazy"></span><span class="agenda__program-event-person-text"><span>Дмитрий Песков</span>, специальный представитель Президента Российской Федерации по вопросам цифрового и технологического развития</span></a></li>
+																	<li><a href="#"><span class="agenda__program-event-person-img"><img class="lazyload img-responsive" data-src="images/person/1.png" alt="#" title="#" srcset="images/person/1@2x.png 2x, images/person/1@3x.png 3x" loading="lazy"></span><span class="agenda__program-event-person-text"><span>Алевтина Черникова</span>, ректор НИТУ «МИСиС»</span></a></li>
+																	<li><a href="#"><span class="agenda__program-event-person-img"><img class="lazyload img-responsive" data-src="images/person/3.png" alt="#" title="#" srcset="images/person/3@2x.png 2x, images/person/3@3x.png 3x" loading="lazy"></span><span class="agenda__program-event-person-text"><span>Аркадий Дворкович</span>, председатель Фонда «Сколково»</span></a></li>
+																	<li><a href="#"><span class="agenda__program-event-person-img"><img class="lazyload img-responsive" data-src="images/person/2.png" alt="#" title="#" srcset="images/person/2@2x.png 2x, images/person/2@3x.png 3x" loading="lazy"></span><span class="agenda__program-event-person-text"><span>Аркадий Дворкович</span>, председатель Фонда «Сколково»</span></a></li>
+																</ul>
+															</div>
+														</div>
+													</div>
+													<div class="agenda__program-action"><a class="btnSpeakersShow" href="#" data-text="Все спикеры" data-change="Свернуть" data-height="115">Все спикеры</a></div>
+													<div class="agenda__program-event-hashtag-footer">
+														<div class="agenda__program-event-hashtag-footer-left">
+															<div class="agenda__program-event-hashtag-list">
+																<div class="agenda__program-event-hashtag is-sch">
+																	<div class="agenda__program-event-hashtag-icon">sch</div>
+																	<div class="agenda__program-event-hashtag-text xs-hidden"> школьное образование</div>
+																</div>
+																<div class="agenda__program-event-hashtag is-workshop">мастер-класс</div>
+															</div>
+														</div>
+														<div class="agenda__program-event-hashtag-footer-right">
+															<div class="agenda__program-event-group">
+																<div class="agenda__program-event-group-btn"><a class="agenda__program-event-btn" href="#">Добавить</a></div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="agenda__program-event program-add program-time-free">
+													<div class="agenda__program-event-hashtag-header">
+														<div class="agenda__program-event-special-time">
+															<div class="agenda__program-event-special-time-text">11 ноября, 10:00–10:40</div>
+														</div>
+														<div class="agenda__program-event-special-time program-event-add-title">
+															<div class="agenda__program-event-special-time-text">Вы решили оставить это время свободным</div>
+														</div>
+														<div class="agenda__program-event-special-time">
+															<div class="agenda__program-event-special-time-text">Если вы передумали, то зайтиме это время</div>
+														</div>
+													</div>
+													<div class="agenda__program-event-hashtag-content">
+														<ul class="program__add-btn-list">
+															<li><a class="program__add-btn" href="#">Выбрать сессию</a></li>
+															<li><a class="program__add-btn" href="#">Общаться с участниками</a></li>
+														</ul>
+													</div>
+												</div>
+												<div class="clear"></div>
+												<div class="event__action-lk">
+													<div><a class="btn-lk-blue" href="#">Открыть мою программу</a></div>
+													<div><a class="btn-lk-border-blue" href="#">Открыть всю программу</a></div>
+												</div>
+												<div class="clear"></div>
+												<div class="event-session-slider session-slider-lk">
+													<div class="event-session-slider-title">Сейчас в программе</div>
+													<div class="event-session-slider-content">
+														<div class="slider sessionSlider session-slider-arrow">
+															<div class="event-slide-block is-checked"><a class="event-slider-link" href="#"><span class="event-slide-content"><span class="event-slide-top"><span class="event-slide-head"><span class="event-slide-circle is-hr"><span>H</span></span><span>кейс-сессия</span></span><span class="event-slide-time">10:00–10:15</span><span class="event-slide-title">Большой финский секрет: как школы в Финляндии превратились в центр притяжения?</span></span><span class="event-slide-bottom"><span class="event-slide-bottom-item"><span class="event-slide-bottom-icon">
+																					<svg class="icon-play-dark">
+																						<use xlink:href="images/sprites.svg#icon-play-dark"></use>
+																					</svg></span><span>Канал №2</span></span></span></span><span class="event-slide-content-drop"><span class="slide-content-drop-title">Модератор</span><span class="slide-content-drop-txt"><span>Алексей Комиссаров, </span> генеральный директор АНО «Россия — страна возможностей»</span><span class="slide-content-drop-title">А также</span><span class="slide-content-drop-txt"><span>Джон О’Брайен, Бен Нельсон, Дмитрий Песков, Елена Бунина, Тим О'Рейли, Алексей Комиссаров, Владимир Мау, Антон Алиханов, Марина Ракова</span></span></span></a></div>
+															<div class="event-slide-block"><a class="event-slider-link" href="#"><span class="event-slide-content"><span class="event-slide-top"><span class="event-slide-head"><span class="event-slide-circle is-all"><span>all</span></span><span>кейс-сессия</span></span><span class="event-slide-time">10:00–10:15</span><span class="event-slide-title">Большой финский секрет: как школы в Финляндии превратились в центр притяжения?</span></span><span class="event-slide-bottom"><span class="event-slide-bottom-item"><span class="event-slide-bottom-icon">
+																					<svg class="icon-play-dark">
+																						<use xlink:href="images/sprites.svg#icon-play-dark"></use>
+																					</svg></span><span>Канал №2</span></span><span class="event-slide-bottom-item"><span>ЗАЛ «АМФИТЕАТР»</span></span></span></span><span class="event-slide-content-drop"><span class="slide-content-drop-title">Спикеры</span><span class="slide-content-drop-txt"><span>Дмитрий Песков,</span> специальный представитель Президента Российской Федерации по вопросам цифрового и технологического развития</span><span class="slide-content-drop-txt"><span>Аркадий Дворкович,</span> председатель Фонда «Сколково»</span><span class="slide-content-drop-txt"><span>Алевтина Черникова,</span> ректор НИТУ «МИСиС»</span></span></a></div>
+															<div class="event-slide-block"><a class="event-slider-link" href="#"><span class="event-slide-content"><span class="event-slide-top"><span class="event-slide-head"><span class="event-slide-circle is-edt"><span>edt</span></span><span>кейс-сессия</span></span><span class="event-slide-time">10:00–10:15</span><span class="event-slide-title">Большой финский секрет: как школы в Финляндии превратились в центр притяжения?</span></span><span class="event-slide-bottom"><span class="event-slide-bottom-item"><span class="event-slide-bottom-icon">
+																					<svg class="icon-play-dark">
+																						<use xlink:href="images/sprites.svg#icon-play-dark"></use>
+																					</svg></span><span>Канал №2</span></span><span class="event-slide-bottom-item"><span>ЗАЛ «АМФИТЕАТР»</span></span></span></span><span class="event-slide-content-drop"><span class="slide-content-drop-title">Спикеры</span><span class="slide-content-drop-txt"><span>Дмитрий Песков,</span> специальный представитель Президента Российской Федерации по вопросам цифрового и технологического развития</span><span class="slide-content-drop-txt"><span>Аркадий Дворкович,</span> председатель Фонда «Сколково»</span><span class="slide-content-drop-txt"><span>Алевтина Черникова,</span> ректор НИТУ «МИСиС»</span></span></a></div>
+															<div class="event-slide-block"><a class="event-slider-link" href="#"><span class="event-slide-content"><span class="event-slide-top"><span class="event-slide-head"><span class="event-slide-circle is-uni"><span>uni</span></span><span>кейс-сессия</span></span><span class="event-slide-time">10:00–10:15</span><span class="event-slide-title">Большой финский секрет: как школы в Финляндии превратились в центр притяжения?</span></span><span class="event-slide-bottom"><span class="event-slide-bottom-item"><span class="event-slide-bottom-icon">
+																					<svg class="icon-play-dark">
+																						<use xlink:href="images/sprites.svg#icon-play-dark"></use>
+																					</svg></span><span>Канал №2</span></span><span class="event-slide-bottom-item"><span>ЗАЛ «АМФИТЕАТР»</span></span></span></span><span class="event-slide-content-drop"><span class="slide-content-drop-title">Спикеры</span><span class="slide-content-drop-txt"><span>Дмитрий Песков,</span> специальный представитель Президента Российской Федерации по вопросам цифрового и технологического развития</span><span class="slide-content-drop-txt"><span>Аркадий Дворкович,</span> председатель Фонда «Сколково»</span><span class="slide-content-drop-txt"><span>Алевтина Черникова,</span> ректор НИТУ «МИСиС»</span></span></a></div>
+															<div class="event-slide-block"><a class="event-slider-link" href="#"><span class="event-slide-content"><span class="event-slide-top"><span class="event-slide-head"><span class="event-slide-circle is-sch"><span>sch</span></span><span>кейс-сессия</span></span><span class="event-slide-time">10:00–10:15</span><span class="event-slide-title">Большой финский секрет: как школы в Финляндии превратились в центр притяжения?</span></span><span class="event-slide-bottom"><span class="event-slide-bottom-item"><span class="event-slide-bottom-icon">
+																					<svg class="icon-play-dark">
+																						<use xlink:href="images/sprites.svg#icon-play-dark"></use>
+																					</svg></span><span>Канал №2</span></span><span class="event-slide-bottom-item"><span>ЗАЛ «АМФИТЕАТР»</span></span></span></span><span class="event-slide-content-drop"><span class="slide-content-drop-title">Спикеры</span><span class="slide-content-drop-txt"><span>Дмитрий Песков,</span> специальный представитель Президента Российской Федерации по вопросам цифрового и технологического развития</span><span class="slide-content-drop-txt"><span>Аркадий Дворкович,</span> председатель Фонда «Сколково»</span><span class="slide-content-drop-txt"><span>Алевтина Черникова,</span> ректор НИТУ «МИСиС»</span></span></a></div>
+															<div class="event-slide-block"><a class="event-slider-link" href="#"><span class="event-slide-content"><span class="event-slide-top"><span class="event-slide-head"><span class="event-slide-circle is-kid"><span>kid</span></span><span>кейс-сессия</span></span><span class="event-slide-time">10:00–10:15</span><span class="event-slide-title">Большой финский секрет: как школы в Финляндии превратились в центр притяжения?</span></span><span class="event-slide-bottom"><span class="event-slide-bottom-item"><span class="event-slide-bottom-icon">
+																					<svg class="icon-play-dark">
+																						<use xlink:href="images/sprites.svg#icon-play-dark"></use>
+																					</svg></span><span>Канал №2</span></span><span class="event-slide-bottom-item"><span>ЗАЛ «АМФИТЕАТР»</span></span></span></span><span class="event-slide-content-drop"><span class="slide-content-drop-title">Спикеры</span><span class="slide-content-drop-txt"><span>Дмитрий Песков,</span> специальный представитель Президента Российской Федерации по вопросам цифрового и технологического развития</span><span class="slide-content-drop-txt"><span>Аркадий Дворкович,</span> председатель Фонда «Сколково»</span><span class="slide-content-drop-txt"><span>Алевтина Черникова,</span> ректор НИТУ «МИСиС»</span></span></a></div>
+															<div class="event-slide-block"><a class="event-slider-link" href="#"><span class="event-slide-content"><span class="event-slide-top"><span class="event-slide-head"><span class="event-slide-circle is-par"><span>par</span></span><span>кейс-сессия</span></span><span class="event-slide-time">10:00–10:15</span><span class="event-slide-title">Большой финский секрет: как школы в Финляндии превратились в центр притяжения?</span></span><span class="event-slide-bottom"><span class="event-slide-bottom-item"><span class="event-slide-bottom-icon">
+																					<svg class="icon-play-dark">
+																						<use xlink:href="images/sprites.svg#icon-play-dark"></use>
+																					</svg></span><span>Канал №2</span></span><span class="event-slide-bottom-item"><span>ЗАЛ «АМФИТЕАТР»</span></span></span></span><span class="event-slide-content-drop"><span class="slide-content-drop-title">Спикеры</span><span class="slide-content-drop-txt"><span>Дмитрий Песков,</span> специальный представитель Президента Российской Федерации по вопросам цифрового и технологического развития</span><span class="slide-content-drop-txt"><span>Аркадий Дворкович,</span> председатель Фонда «Сколково»</span><span class="slide-content-drop-txt"><span>Алевтина Черникова,</span> ректор НИТУ «МИСиС»</span></span></a></div>
+														</div>
+													</div>
+													<div class="event-session-slider-bottom">Еще 5 мероприятий на это время </div>
+												</div>
+												<div class="clear"></div>
+												<div class="my-upcoming-events">
+													<div class="program__content-title">Рекомендуем добавить</div>
+													<div class="clear"></div>
+													<div class="agenda__program-event agendaProgramBlock">
+														<div class="agenda__program-event-hashtag-header">
+															<div class="agenda__program-event-special-time">
+																<div class="agenda__program-event-special-time-text">11 ноября, 10:00–10:40</div>
+															</div>
+															<div class="agenda__program-event-hashtag-header-right">
+																<div class="agenda__program-event-hashtag-work">
+																	<div class="hashtag-work-online-icon"></div>
+																	<div class="hashtag-work-online-text">EdCrunch Stage</div>
+																</div>
+																<div class="agenda__program-event-hashtag-room">
+																	<div class="hashtag-work-online-text">ЗАЛ «АМФИТЕАТР»</div>
+																</div>
+															</div>
+														</div>
+														<div class="agenda__program-event-hashtag-content">
+															<div class="agenda__program-content-left">
+																<div class="agenda__program-content-top">
+																	<div class="agenda__program-event-name"><a href="#">Торжественное награждение победителей конкурсов EDCRUNCH AWARD OOC, EDCRUNCH AWARD PRODUCT, EDCRUNCH AWARD OEC, GESA RUSSIA</a></div>
+																	<div class="agenda__program-content-right">
+																		<div class="agenda__program-event-group-count">
+																			<div class="agenda__program-event-group-count-box">215</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="agenda__program-event-box">
+																	<ul class="agenda__program-event-box-list agendaProgramList">
+																		<li><a href="#"><span class="agenda__program-event-person-img"><img class="lazyload img-responsive" data-src="images/person/2.png" alt="#" title="#" srcset="images/person/2@2x.png 2x, images/person/2@3x.png 3x" loading="lazy"></span><span class="agenda__program-event-person-text"><span>Дмитрий Песков</span>, специальный представитель Президента Российской Федерации по вопросам цифрового и технологического развития</span></a></li>
+																		<li><a href="#"><span class="agenda__program-event-person-img"><img class="lazyload img-responsive" data-src="images/person/1.png" alt="#" title="#" srcset="images/person/1@2x.png 2x, images/person/1@3x.png 3x" loading="lazy"></span><span class="agenda__program-event-person-text"><span>Алевтина Черникова</span>, ректор НИТУ «МИСиС»</span></a></li>
+																		<li><a href="#"><span class="agenda__program-event-person-img"><img class="lazyload img-responsive" data-src="images/person/3.png" alt="#" title="#" srcset="images/person/3@2x.png 2x, images/person/3@3x.png 3x" loading="lazy"></span><span class="agenda__program-event-person-text"><span>Аркадий Дворкович</span>, председатель Фонда «Сколково»</span></a></li>
+																		<li><a href="#"><span class="agenda__program-event-person-img"><img class="lazyload img-responsive" data-src="images/person/2.png" alt="#" title="#" srcset="images/person/2@2x.png 2x, images/person/2@3x.png 3x" loading="lazy"></span><span class="agenda__program-event-person-text"><span>Аркадий Дворкович</span>, председатель Фонда «Сколково»</span></a></li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+														<div class="agenda__program-action"><a class="btnSpeakersShow" href="#" data-text="Все спикеры" data-change="Свернуть" data-height="115">Все спикеры</a></div>
+														<div class="agenda__program-event-hashtag-footer">
+															<div class="agenda__program-event-hashtag-footer-left">
+																<div class="agenda__program-event-hashtag-list">
+																	<div class="agenda__program-event-hashtag is-sch">
+																		<div class="agenda__program-event-hashtag-icon">sch</div>
+																		<div class="agenda__program-event-hashtag-text xs-hidden"> школьное образование</div>
+																	</div>
+																	<div class="agenda__program-event-hashtag is-workshop">мастер-класс</div>
+																</div>
+															</div>
+															<div class="agenda__program-event-hashtag-footer-right">
+																<div class="agenda__program-event-group">
+																	<div class="agenda__program-event-group-btn"><a class="agenda__program-event-btn" href="#">Добавить</a></div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="agenda__program-event agendaProgramBlock">
+														<div class="agenda__program-event-hashtag-header">
+															<div class="agenda__program-event-special-time">
+																<div class="agenda__program-event-special-time-text">11 ноября, 10:00–10:40</div>
+															</div>
+															<div class="agenda__program-event-hashtag-header-right">
+																<div class="agenda__program-event-hashtag-work">
+																	<div class="hashtag-work-online-icon"></div>
+																	<div class="hashtag-work-online-text">EdCrunch Stage</div>
+																</div>
+																<div class="agenda__program-event-hashtag-room">
+																	<div class="hashtag-work-online-text">ЗАЛ «АМФИТЕАТР»</div>
+																</div>
+															</div>
+														</div>
+														<div class="agenda__program-event-hashtag-content">
+															<div class="agenda__program-content-left">
+																<div class="agenda__program-content-top">
+																	<div class="agenda__program-event-name"><a href="#">Торжественное награждение победителей конкурсов EDCRUNCH AWARD OOC, EDCRUNCH AWARD PRODUCT, EDCRUNCH AWARD OEC, GESA RUSSIA</a></div>
+																	<div class="agenda__program-content-right">
+																		<div class="agenda__program-event-group-count">
+																			<div class="agenda__program-event-group-count-box">215</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="agenda__program-event-box">
+																	<ul class="agenda__program-event-box-list agendaProgramList">
+																		<li><a href="#"><span class="agenda__program-event-person-img"><img class="lazyload img-responsive" data-src="images/person/2.png" alt="#" title="#" srcset="images/person/2@2x.png 2x, images/person/2@3x.png 3x" loading="lazy"></span><span class="agenda__program-event-person-text"><span>Дмитрий Песков</span>, специальный представитель Президента Российской Федерации по вопросам цифрового и технологического развития</span></a></li>
+																		<li><a href="#"><span class="agenda__program-event-person-img"><img class="lazyload img-responsive" data-src="images/person/1.png" alt="#" title="#" srcset="images/person/1@2x.png 2x, images/person/1@3x.png 3x" loading="lazy"></span><span class="agenda__program-event-person-text"><span>Алевтина Черникова</span>, ректор НИТУ «МИСиС»</span></a></li>
+																		<li><a href="#"><span class="agenda__program-event-person-img"><img class="lazyload img-responsive" data-src="images/person/3.png" alt="#" title="#" srcset="images/person/3@2x.png 2x, images/person/3@3x.png 3x" loading="lazy"></span><span class="agenda__program-event-person-text"><span>Аркадий Дворкович</span>, председатель Фонда «Сколково»</span></a></li>
+																		<li><a href="#"><span class="agenda__program-event-person-img"><img class="lazyload img-responsive" data-src="images/person/2.png" alt="#" title="#" srcset="images/person/2@2x.png 2x, images/person/2@3x.png 3x" loading="lazy"></span><span class="agenda__program-event-person-text"><span>Аркадий Дворкович</span>, председатель Фонда «Сколково»</span></a></li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+														<div class="agenda__program-action"><a class="btnSpeakersShow" href="#" data-text="Все спикеры" data-change="Свернуть" data-height="115">Все спикеры</a></div>
+														<div class="agenda__program-event-hashtag-footer">
+															<div class="agenda__program-event-hashtag-footer-left">
+																<div class="agenda__program-event-hashtag-list">
+																	<div class="agenda__program-event-hashtag is-sch">
+																		<div class="agenda__program-event-hashtag-icon">sch</div>
+																		<div class="agenda__program-event-hashtag-text xs-hidden"> школьное образование</div>
+																	</div>
+																	<div class="agenda__program-event-hashtag is-workshop">мастер-класс</div>
+																</div>
+															</div>
+															<div class="agenda__program-event-hashtag-footer-right">
+																<div class="agenda__program-event-group">
+																	<div class="agenda__program-event-group-btn"><a class="agenda__program-event-btn" href="#">Добавить</a></div>
+																</div>
+															</div>
+														</div>
+													</div>
+													<div class="agenda__program-event agendaProgramBlock">
+														<div class="agenda__program-event-hashtag-header">
+															<div class="agenda__program-event-special-time">
+																<div class="agenda__program-event-special-time-text">11 ноября, 10:00–10:40</div>
+															</div>
+															<div class="agenda__program-event-hashtag-header-right">
+																<div class="agenda__program-event-hashtag-work">
+																	<div class="hashtag-work-online-icon"></div>
+																	<div class="hashtag-work-online-text">EdCrunch Stage</div>
+																</div>
+																<div class="agenda__program-event-hashtag-room">
+																	<div class="hashtag-work-online-text">ЗАЛ «АМФИТЕАТР»</div>
+																</div>
+															</div>
+														</div>
+														<div class="agenda__program-event-hashtag-content">
+															<div class="agenda__program-content-left">
+																<div class="agenda__program-content-top">
+																	<div class="agenda__program-event-name"><a href="#">Торжественное награждение победителей конкурсов EDCRUNCH AWARD OOC, EDCRUNCH AWARD PRODUCT, EDCRUNCH AWARD OEC, GESA RUSSIA</a></div>
+																	<div class="agenda__program-content-right">
+																		<div class="agenda__program-event-group-count">
+																			<div class="agenda__program-event-group-count-box">215</div>
+																		</div>
+																	</div>
+																</div>
+																<div class="agenda__program-event-box">
+																	<ul class="agenda__program-event-box-list agendaProgramList">
+																		<li><a href="#"><span class="agenda__program-event-person-img"><img class="lazyload img-responsive" data-src="images/person/2.png" alt="#" title="#" srcset="images/person/2@2x.png 2x, images/person/2@3x.png 3x" loading="lazy"></span><span class="agenda__program-event-person-text"><span>Дмитрий Песков</span>, специальный представитель Президента Российской Федерации по вопросам цифрового и технологического развития</span></a></li>
+																		<li><a href="#"><span class="agenda__program-event-person-img"><img class="lazyload img-responsive" data-src="images/person/1.png" alt="#" title="#" srcset="images/person/1@2x.png 2x, images/person/1@3x.png 3x" loading="lazy"></span><span class="agenda__program-event-person-text"><span>Алевтина Черникова</span>, ректор НИТУ «МИСиС»</span></a></li>
+																		<li><a href="#"><span class="agenda__program-event-person-img"><img class="lazyload img-responsive" data-src="images/person/3.png" alt="#" title="#" srcset="images/person/3@2x.png 2x, images/person/3@3x.png 3x" loading="lazy"></span><span class="agenda__program-event-person-text"><span>Аркадий Дворкович</span>, председатель Фонда «Сколково»</span></a></li>
+																		<li><a href="#"><span class="agenda__program-event-person-img"><img class="lazyload img-responsive" data-src="images/person/2.png" alt="#" title="#" srcset="images/person/2@2x.png 2x, images/person/2@3x.png 3x" loading="lazy"></span><span class="agenda__program-event-person-text"><span>Аркадий Дворкович</span>, председатель Фонда «Сколково»</span></a></li>
+																	</ul>
+																</div>
+															</div>
+														</div>
+														<div class="agenda__program-action"><a class="btnSpeakersShow" href="#" data-text="Все спикеры" data-change="Свернуть" data-height="115">Все спикеры</a></div>
+														<div class="agenda__program-event-hashtag-footer">
+															<div class="agenda__program-event-hashtag-footer-left">
+																<div class="agenda__program-event-hashtag-list">
+																	<div class="agenda__program-event-hashtag is-sch">
+																		<div class="agenda__program-event-hashtag-icon">sch</div>
+																		<div class="agenda__program-event-hashtag-text xs-hidden"> школьное образование</div>
+																	</div>
+																	<div class="agenda__program-event-hashtag is-workshop">мастер-класс</div>
+																</div>
+															</div>
+															<div class="agenda__program-event-hashtag-footer-right">
+																<div class="agenda__program-event-group">
+																	<div class="agenda__program-event-group-btn"><a class="agenda__program-event-btn" href="#">Добавить</a></div>
+																</div>
+															</div>
+														</div>
+													</div>
+												</div>
+												<div class="my-upcoming-action">
+													<div><a class="btn-lk-border-blue" href="#">Другие рекомендации<span class="count-recommend-box">8</span></a></div>
+												</div>
+											</div>
+										</div>
+										<div class="xs-visble clear">
+											<div class="event-sidebar-block event-promo"><img class="img-responsive" src="images/simple-promo.png" alt="#"></div>
+										</div>
+										<div class="clear"></div>
+										<div class="accordion__container">
+											<div class="accordion__block">
+												<div class="accordion__title">Часто задаваемые вопросы</div>
+												<ul class="accordion__list">
+													<li><a class="accordion__list-btn accordion-btn-js" href="#"><span>Как купить билет?</span></a>
+														<div class="accordion__list-text accordion-text-js">
+															<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, sit ullam hic ipsa minima, vero nemo aspernatur atque ea, sequi quibusdam similique provident! Debitis at, saepe iste molestias libero aperiam.</p>
+														</div>
+													</li>
+													<li><a class="accordion__list-btn accordion-btn-js" href="#"><span>Какую категорию билета мне лучше выбрать?</span></a>
+														<div class="accordion__list-text accordion-text-js">
+															<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, sit ullam hic ipsa minima, vero nemo aspernatur atque ea, sequi quibusdam similique provident! Debitis at, saepe iste molestias libero aperiam.</p>
+														</div>
+													</li>
+													<li><a class="accordion__list-btn accordion-btn-js" href="#"><span>Где будет проходить конференция?</span></a>
+														<div class="accordion__list-text accordion-text-js">
+															<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Vel, sit ullam hic ipsa minima, vero nemo aspernatur atque ea, sequi quibusdam similique provident! Debitis at, saepe iste molestias libero aperiam.</p>
+														</div>
+													</li>
+												</ul>
+												<div class="accordion__actions">
+													<div><a class="btn-lk-border-blue" href="#">Другие вопросы</a></div>
+												</div>
+											</div>
+										</div>
+									</div>
+									<div class="event-sidebar-right sm-hidden">
+										<div class="my__profile-sidebar event-sidebar-block">
+											<div class="my__profile-sidebar--head">
+												<div class="my__profile-sidebar-head--title">Мой профиль</div>
+												<div class="my__profile-sidebar-head--info">
+													<div class="my__profile-sidebar-head--img"><a data-fancybox="modalUploadAvatar" data-src="#modalUploadAvatar" href="javascript:;">
+															<picture>
+																<source media="(max-width: 959px)" srcset="images/simple.png"><img class="img-responsive lazyload" data-lazy="images/lk/icon-avatar.png" srcset="images/lk/icon-avatar.png 1x, images/lk/icon-avatar@2x.png 2x, images/lk/icon-avatar@3x.png 3x" alt="#">
+															</picture></a></div>
+													<div class="my__profile-sidebar-head--content">
+														<div class="my__profile-sidebar-head-username">Николай Щеглов</div>
+														<div class="my__profile-sidebar-head-position">Директор школы, ГСБУ №886</div>
+														<div class="clear"></div>
+														<div class="my__profile-sidebar-head-status">Участник</div>
+													</div>
+												</div>
+											</div>
+											<div class="my__profile-sidebar--content"><a class="my__profile-sidebar-btn-download" href="#">Скачать сертификат участника</a></div>
+											<div class="my__profile-sidebar--footer"><a class="my__profile-sidebar-btn-link" href="#">Перейти в профиль</a></div>
+										</div>
+										<div class="event-sidebar-block event-power sm-hidden"><img class="img-responsive" src="images/simple-power.png" alt="#"></div>
+										<div class="event-sidebar-block event-promo sm-hidden"><img class="img-responsive" src="images/simple-promo.png" alt="#"></div>
+										<div class="event-sidebar-block event-interested event-interested-lk sm-hidden">
+											<div class="event-interest-title">Избранные контакты</div>
+											<ul class="list-chat-items list-chat-interested">
+												<li class="list-chat-item">
+													<div class="chat-avatar-box is-online"><img class="chat-avatar" src="images/chat-avatar/1.jpg" alt="#"></div>
+													<div class="chat-content">
+														<div class="chat-head">
+															<div class="chat-head-block">
+																<div class="chat-username">Ирина Константинопольская</div>
+																<div class="chat-message">Суперлаб</div>
+																<div class="chat-user-status">Участник</div>
+															</div>
+															<div class="chat-message-action"><a class="chat-message-btn chat-message-open" href="#"></a><a class="chat-message-btn chat-message-remove" href="#"></a></div>
+														</div>
+													</div>
+												</li>
+												<li class="list-chat-item">
+													<div class="chat-avatar-box is-online is-all">
+														<div class="chat-avatar">ВП</div>
+													</div>
+													<div class="chat-content">
+														<div class="chat-head">
+															<div class="chat-head-block">
+																<div class="chat-username">Василий Петров						</div>
+																<div class="chat-message">Школа №886, учитель</div>
+																<div class="chat-user-status">Спикер</div>
+															</div>
+															<div class="chat-message-action"><a class="chat-message-btn chat-message-open" href="#"></a><a class="chat-message-btn chat-message-remove" href="#"></a></div>
+														</div>
+													</div>
+												</li>
+												<li class="list-chat-item">
+													<div class="chat-avatar-box"><img class="chat-avatar" src="images/chat-avatar/2.jpg" alt="#"></div>
+													<div class="chat-content">
+														<div class="chat-head">
+															<div class="chat-head-block">
+																<div class="chat-username">Галина Тимченко					</div>
+																<div class="chat-message">Открытые технологии, скрам-мастер</div>
+																<div class="chat-user-status">Спикер</div>
+															</div>
+															<div class="chat-message-action"><a class="chat-message-btn chat-message-open" href="#"></a><a class="chat-message-btn chat-message-remove" href="#"></a></div>
+														</div>
+													</div>
+												</li>
+												<li class="list-chat-item">
+													<div class="chat-avatar-box is-offline"><img class="chat-avatar" src="images/chat-avatar/3.jpg" alt="#"></div>
+													<div class="chat-content">
+														<div class="chat-head">
+															<div class="chat-head-block">
+																<div class="chat-username">Татьяна Орлова		</div>
+																<div class="chat-message">Суперлаб</div>
+																<div class="chat-user-status">Участник</div>
+															</div>
+															<div class="chat-message-action"><a class="chat-message-btn chat-message-open" href="#"></a><a class="chat-message-btn chat-message-add" href="#"></a></div>
+														</div>
+													</div>
+												</li>
+												<li class="list-chat-item">
+													<div class="chat-avatar-box is-offline"><img class="chat-avatar" src="images/chat-avatar/4.jpg" alt="#"></div>
+													<div class="chat-content">
+														<div class="chat-head">
+															<div class="chat-head-block">
+																<div class="chat-username">Владимир Михайлов</div>
+																<div class="chat-message">ACI</div>
+																<div class="chat-user-status">Спикер</div>
+															</div>
+															<div class="chat-message-action"><a class="chat-message-btn chat-message-open" href="#"></a><a class="chat-message-btn chat-message-add" href="#"></a></div>
+														</div>
+													</div>
+												</li>
+											</ul>
+											<div class="event-interest-action"><a class="event-interest-btn" href="#">Смотреть все контакты</a></div>
+											<div class="event-sidebar-block-recommend">
+												<div class="event-interest-title">Рекомендуем добавить</div>
+												<ul class="list-chat-items list-chat-interested">
+													<li class="list-chat-item">
+														<div class="chat-avatar-box is-online"><img class="chat-avatar" src="images/chat-avatar/1.jpg" alt="#"></div>
+														<div class="chat-content">
+															<div class="chat-head">
+																<div class="chat-head-block">
+																	<div class="chat-username">Ирина Константинопольская</div>
+																	<div class="chat-message">Суперлаб</div>
+																	<div class="chat-user-status">Участник</div>
+																</div>
+																<div class="chat-message-action"><a class="chat-message-btn chat-message-open" href="#"></a><a class="chat-message-btn chat-message-add" href="#"></a></div>
+															</div>
+														</div>
+													</li>
+													<li class="list-chat-item">
+														<div class="chat-avatar-box is-online is-all">
+															<div class="chat-avatar">ВП</div>
+														</div>
+														<div class="chat-content">
+															<div class="chat-head">
+																<div class="chat-head-block">
+																	<div class="chat-username">Василий Петров						</div>
+																	<div class="chat-message">Школа №886, учитель</div>
+																	<div class="chat-user-status">Спикер</div>
+																</div>
+																<div class="chat-message-action"><a class="chat-message-btn chat-message-open" href="#"></a><a class="chat-message-btn chat-message-add" href="#"></a></div>
+															</div>
+														</div>
+													</li>
+													<li class="list-chat-item">
+														<div class="chat-avatar-box"><img class="chat-avatar" src="images/chat-avatar/2.jpg" alt="#"></div>
+														<div class="chat-content">
+															<div class="chat-head">
+																<div class="chat-head-block">
+																	<div class="chat-username">Галина Тимченко					</div>
+																	<div class="chat-message">Открытые технологии, скрам-мастер</div>
+																	<div class="chat-user-status">Спикер</div>
+																</div>
+																<div class="chat-message-action"><a class="chat-message-btn chat-message-open" href="#"></a><a class="chat-message-btn chat-message-add" href="#"></a></div>
+															</div>
+														</div>
+													</li>
+												</ul>
+											</div>
+											<div class="event-interest-action"><a class="event-interest-btn" href="#">Другие рекомендации</a></div>
+											<div class="event-interest-action event-invite-action"><a class="event-interest-btn is-active" href="#">Пригласить друзей</a></div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div><a class="event-btn-help" data-fancybox="modalHelp" data-src="#modalHelp" href="javascript:;"></a><a class="event-btn-favorite" data-fancybox="modalFavorite" data-src="#modalFavorite" href="javascript:;"></a>
+		<div class="modal-container modal-big modal__help" id="modalHelp">
+			<div class="modal-content modal__help-content">
+				<div class="modal-title modal__quiz-title modal-help-title">техническая поддержка</div>
+				<form class="modal__help-form" method="post" action="#">
+					<div class="modal__quiz-body modal__help-body">
+						<div class="modal__help-body--text">
+							<p>Если у Вас возникли какие-либо вопросы, Вы можете задать их с помощью данной формы</p>
+						</div>
+						<div class="modal__help-form--group">
+							<label class="modal__quiz-add-label" for="help__surname">Фамилия </label>
+							<input class="modal__quiz-add-input" type="text" placeholder="Илон" id="help__surname">
+						</div>
+						<div class="modal__help-form--group">
+							<label class="modal__quiz-add-label" for="help__email">Контактный E-mail </label>
+							<input class="modal__quiz-add-input" type="email" placeholder="founder@spacex.org" id="help__email">
+						</div>
+						<div class="modal__help-form--group">
+							<label class="modal__quiz-add-label" for="help__question">Ваш вопрос</label>
+							<textarea class="modal__quiz-add-input" placeholder="Введите текст вопроса" id="help__question"></textarea>
+						</div>
+						<div class="modal__help-form--group modal__help-form--action">
+							<div>
+								<button class="btn-lk-blue" type="submit">Пригласить друзей</button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="modal-container modal-big modal__favorite" id="modalFavorite">
+			<div class="modal-content modal__favorite-content">
+				<div class="modal-title modal__quiz-title modal-help-title modal__favorite-title">Избранные контакты</div>
+				<ul class="list-chat-items list-chat-interested">
+					<li class="list-chat-item">
+						<div class="chat-avatar-box is-online"><img class="chat-avatar" src="images/chat-avatar/1.jpg" alt="#"></div>
+						<div class="chat-content">
+							<div class="chat-head">
+								<div class="chat-head-block">
+									<div class="chat-username">Ирина Константинопольская</div>
+									<div class="chat-message">Суперлаб</div>
+									<div class="chat-user-status">Участник</div>
+								</div>
+								<div class="chat-message-action"><a class="chat-message-btn chat-message-open" href="#"></a><a class="chat-message-btn chat-message-remove" href="#"></a></div>
+							</div>
+						</div>
+					</li>
+					<li class="list-chat-item">
+						<div class="chat-avatar-box is-online is-all">
+							<div class="chat-avatar">ВП</div>
+						</div>
+						<div class="chat-content">
+							<div class="chat-head">
+								<div class="chat-head-block">
+									<div class="chat-username">Василий Петров						</div>
+									<div class="chat-message">Школа №886, учитель</div>
+									<div class="chat-user-status">Спикер</div>
+								</div>
+								<div class="chat-message-action"><a class="chat-message-btn chat-message-open" href="#"></a><a class="chat-message-btn chat-message-remove" href="#"></a></div>
+							</div>
+						</div>
+					</li>
+					<li class="list-chat-item">
+						<div class="chat-avatar-box"><img class="chat-avatar" src="images/chat-avatar/2.jpg" alt="#"></div>
+						<div class="chat-content">
+							<div class="chat-head">
+								<div class="chat-head-block">
+									<div class="chat-username">Галина Тимченко					</div>
+									<div class="chat-message">Открытые технологии, скрам-мастер</div>
+									<div class="chat-user-status">Спикер</div>
+								</div>
+								<div class="chat-message-action"><a class="chat-message-btn chat-message-open" href="#"></a><a class="chat-message-btn chat-message-remove" href="#"></a></div>
+							</div>
+						</div>
+					</li>
+					<li class="list-chat-item">
+						<div class="chat-avatar-box is-offline"><img class="chat-avatar" src="images/chat-avatar/3.jpg" alt="#"></div>
+						<div class="chat-content">
+							<div class="chat-head">
+								<div class="chat-head-block">
+									<div class="chat-username">Татьяна Орлова		</div>
+									<div class="chat-message">Суперлаб</div>
+									<div class="chat-user-status">Участник</div>
+								</div>
+								<div class="chat-message-action"><a class="chat-message-btn chat-message-open" href="#"></a><a class="chat-message-btn chat-message-add" href="#"></a></div>
+							</div>
+						</div>
+					</li>
+					<li class="list-chat-item">
+						<div class="chat-avatar-box is-offline"><img class="chat-avatar" src="images/chat-avatar/4.jpg" alt="#"></div>
+						<div class="chat-content">
+							<div class="chat-head">
+								<div class="chat-head-block">
+									<div class="chat-username">Владимир Михайлов</div>
+									<div class="chat-message">ACI</div>
+									<div class="chat-user-status">Спикер</div>
+								</div>
+								<div class="chat-message-action"><a class="chat-message-btn chat-message-open" href="#"></a><a class="chat-message-btn chat-message-add" href="#"></a></div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="event-interest-action"><a class="event-interest-btn" href="#">Смотреть все контакты</a></div>
+				<div class="event-sidebar-block-recommend">
+					<div class="event-interest-title">Рекомендуем добавить</div>
+					<ul class="list-chat-items list-chat-interested">
+						<li class="list-chat-item">
+							<div class="chat-avatar-box is-online"><img class="chat-avatar" src="images/chat-avatar/1.jpg" alt="#"></div>
+							<div class="chat-content">
+								<div class="chat-head">
+									<div class="chat-head-block">
+										<div class="chat-username">Ирина Константинопольская</div>
+										<div class="chat-message">Суперлаб</div>
+										<div class="chat-user-status">Участник</div>
+									</div>
+									<div class="chat-message-action"><a class="chat-message-btn chat-message-open" href="#"></a><a class="chat-message-btn chat-message-add" href="#"></a></div>
+								</div>
+							</div>
+						</li>
+						<li class="list-chat-item">
+							<div class="chat-avatar-box is-online is-all">
+								<div class="chat-avatar">ВП</div>
+							</div>
+							<div class="chat-content">
+								<div class="chat-head">
+									<div class="chat-head-block">
+										<div class="chat-username">Василий Петров						</div>
+										<div class="chat-message">Школа №886, учитель</div>
+										<div class="chat-user-status">Спикер</div>
+									</div>
+									<div class="chat-message-action"><a class="chat-message-btn chat-message-open" href="#"></a><a class="chat-message-btn chat-message-add" href="#"></a></div>
+								</div>
+							</div>
+						</li>
+						<li class="list-chat-item">
+							<div class="chat-avatar-box"><img class="chat-avatar" src="images/chat-avatar/2.jpg" alt="#"></div>
+							<div class="chat-content">
+								<div class="chat-head">
+									<div class="chat-head-block">
+										<div class="chat-username">Галина Тимченко					</div>
+										<div class="chat-message">Открытые технологии, скрам-мастер</div>
+										<div class="chat-user-status">Спикер</div>
+									</div>
+									<div class="chat-message-action"><a class="chat-message-btn chat-message-open" href="#"></a><a class="chat-message-btn chat-message-add" href="#"></a></div>
+								</div>
+							</div>
+						</li>
+					</ul>
+				</div>
+				<div class="event-interest-action"><a class="event-interest-btn" href="#">Другие рекомендации</a></div>
+				<div class="event-interest-action event-invite-action"><a class="event-interest-btn is-active" href="#">Пригласить друзей</a></div>
+			</div>
+		</div>
+		<footer>
+			<div class="footer-sponsor">
+				<div class="container">
+					<div class="footer-sponsor-left">
+						<div class="footer-sponsor-title">ОРГАНИЗАТОРЫ</div>
+						<div class="clear"></div>
+						<ul class="footer-sponsor-list">
+							<li><a href="https://misis.ru" target="_blank"><span><img class="lazyload" data-src="images/sponsor/1.png" alt="#" loading="lazy"></span></a></li>
+							<li><a href="https://2035.university" target="_blank"><span><img class="lazyload" data-src="images/sponsor/2.png" alt="#" loading="lazy"></span></a></li>
+						</ul>
+					</div>
+					<div class="footer-sponsor-right">
+						<div class="footer-sponsor-title">ПРИ ПОДДЕРЖКЕ</div>
+						<div class="clear"></div>
+						<ul class="footer-sponsor-list footer-help-list">
+							<li><a href="https://2035.university" target="_blank"><span><img class="lazyload" data-src="images/sponsor/3.png" alt="#" loading="lazy"></span></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class="footer-blue-container">
+				<div class="container">
+					<div class="footer-blue-content">
+						<div class="footer-blue-logo">
+							<svg class="icon-logo-footer">
+								<use xlink:href="images/sprites.svg#logo-footer"></use>
+							</svg>
+						</div>
+						<div class="footer-blue-history">
+							<div class="footer-blue-title">История <br> EdCrunch</div>
+							<ul class="footer-history-list">
+								<li><a href="https://2018.edcrunch.ru" target="_blank">2018</a></li>
+								<li><a href="https://2019.edcrunch.ru/" target="_blank">2019</a></li>
+							</ul>
+						</div>
+						<div class="footer-blue-social">
+							<div class="footer-blue-title">Присоединяйтесь к нам <br>в социальных сетях:</div>
+							<ul class="footer-social-list">
+								<li><a href="https://www.facebook.com/EdCrunchNews/" target="_blank">
+										<svg class="icon-fb">
+											<use xlink:href="images/sprites.svg#icon-fb"></use>
+										</svg></a></li>
+								<li><a href="https://www.instagram.com/edcrunch/" target="_blank">
+										<svg class="icon-instagram">
+											<use xlink:href="images/sprites.svg#icon-instagram"></use>
+										</svg></a></li>
+								<li><a href="https://vk.com/edcrunchnews" target="_blank">
+										<svg class="icon-vk">
+											<use xlink:href="images/sprites.svg#icon-vk"></use>
+										</svg></a></li>
+								<li><a href="https://www.youtube.com/channel/UCMVYCcf-KvMR5hPJS26PvIQ" target="_blank">
+										<svg class="icon-youtube">
+											<use xlink:href="images/sprites.svg#icon-youtube"></use>
+										</svg></a></li>
+								<li><a href="https://teleg.run/EdCrunchRu" target="_blank">
+										<svg class="icon-telegram">
+											<use xlink:href="images/sprites.svg#icon-telegram"></use>
+										</svg></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="footer-contacts-container">
+				<div class="container">
+					<ul class="footer-contacts-list">
+						<li>
+							<div class="f-contact-title">Организационные вопросы <br> и продажа билетов</div>
+							<div class="f-contact-email"><a href="mailto:hello@edcrunch.ru">hello@edcrunch.ru</a></div>
+						</li>
+						<li>
+							<div class="f-contact-title">Стать партнёром</div>
+							<div class="f-contact-email"><a href="mailto:partner@edcrunch.ru">partner@edcrunch.ru</a></div>
+						</li>
+						<li>
+							<div class="f-contact-title"> Стать спикером</div>
+							<div class="f-contact-email"><a href="mailto:speak@edcrunch.ru">speak@edcrunch.ru</a></div>
+						</li>
+						<li>
+							<div class="f-contact-title"> Участвовать <br> в выставке</div>
+							<div class="f-contact-email"><a href="mailto:expo@edcrunch.ru">expo@edcrunch.ru</a></div>
+						</li>
+						<li>
+							<div class="f-contact-title">СМИ</div>
+							<div class="f-contact-email"><a href="mailto:pr@edcrunch.ru">pr@edcrunch.ru</a></div>
+						</li>
+					</ul>
+					<div class="clear"></div>
+					<div class="footer-bottom">
+						<div class="copy">&copy; 2014–2020, EdCrunch. Все права защищены.</div><a class="footer-bottom-link" href="https://2019.edcrunch.ru/legal/" target="_blank">Правовая информация</a>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<script src="js/lazyimage.js?v=1601538706327"></script>
+		<script src="js/lazyanimation.js?v=1601538706327"></script>
+		<script src="js/vendor.js?v=1601538706327"></script>
+		<script src="js/main.js?v=1601538706327"></script>
+		<script src="js/common.js?v=1601538706327"></script>
+		<script src="js/jquery.fancybox.min.js?v=1601538706327"></script>
+	</body>
+</html>
