@@ -1,1 +1,0 @@
-{let e=new IntersectionObserver((e,r)=>{e.forEach(e=>{e.isIntersecting&&(t(e.target),r.unobserve(e.target))})},{rootMargin:"50px 0px 50px 0px",threshold:0});document.querySelectorAll(".animation-lazy").forEach(t=>{e.observe(t)});const t=e=>{e.classList.add("active-animation")}}
