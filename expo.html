@@ -4,6 +4,21 @@
 		<meta charset="utf-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+		<meta name="description" content="Образовательный опыт нового времени: что работает в технологиях?">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="http://conf.edcrunch.ru/">
+		<meta property="og:locale" content="ru_RU">
+		<meta property="og:title" content="Конференция Edcrunch On Demand">
+		<meta property="og:description" content="Образовательный опыт нового времени: что работает в технологиях?">
+		<meta property="og:image" content="https://stasshtaub.github.io/edcrunch2020-frontend-deploy/images/og-edcrunch2020.png">
+		<meta property="og:image:type" content="image/png">
+		<meta property="og:image:width" content="1080">
+		<meta property="og:image:height" content="1080">
+		<meta property="og:image:alt" content="Конференция Edcrunch On Demand">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:title" content="Конференция Edcrunch On Demand">
+		<meta name="twitter:description" content="Образовательный опыт нового времени: что работает в технологиях?">
+		<meta name="twitter:image" content="https://stasshtaub.github.io/edcrunch2020-frontend-deploy/images/og-edcrunch2020.png">
 		<title>EdCrunch 2020</title>
 		<link rel="apple-touch-icon" href="images/touch/apple-icon-57x57.png" sizes="57x57">
 		<link rel="apple-touch-icon" href="images/touch/apple-icon-60x60.png" sizes="60x60">
@@ -23,18 +38,18 @@
 		<link rel="preload" href="fonts/HalvarBreit-Bd.woff2" as="font" type="font/woff2" crossorigin>
 		<link rel="preload" href="fonts/HalvarBreit-Rg.woff2" as="font" type="font/woff2" crossorigin>
 		<link rel="stylesheet" href="css/critical-fonts.css">
-		<link rel="preload" href="fonts/Inter-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
-		<link rel="preload" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
-		<link rel="preload" href="fonts/HalvarStnclBreit-HlMaxG.woff2" as="font" type="font/woff2" crossorigin>
-		<link rel="stylesheet" href="css/main.css?v=1600427280221">
-		<link rel="stylesheet" href="css/jquery.fancybox.min.css?v=1600427280221">
+		<link rel="preload" href="fonts/HalvarStnclBreit-ThMidG.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="preload" href="fonts/Halvar-Breitschrift-Medium.woff2" as="font" type="font/woff2" crossorigin>
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&amp;display=swap">
+		<link rel="stylesheet" href="css/main.css?v=1601729540117">
+		<link rel="stylesheet" href="css/jquery.fancybox.min.css?v=1601729540117">
 	</head>
 	<body>
 		<header>
 			<div class="header-panel-top">
 				<div class="container">
 					<div class="header-panel-top-right">
-						<div class="header-panel-top-auth"><a data-fancybox="modalLoginPlatform" data-src="#modalLoginPlatform" href="javascript:;">Личный кабинет</a></div>
+						<div class="header-panel-top-auth"><a href="#">Личный кабинет</a></div>
 						<div class="touch-nav"><i></i><i></i><i></i></div>
 					</div>
 				</div>
@@ -278,7 +293,7 @@
 					</div>
 				</div>
 			</div>
-		</footer><a data-fancybox="modalSent" data-src="#modalSent" href="javascript:;" style="display: none !important;"></a>
+		</footer><a data-fancybox="modalSent" data-src="#modalSent" href="javascript:;" style="display: none !important;"></a><a data-fancybox="modalQuiz" data-src="#modalQuiz" href="javascript:;" style="display: none !important;"></a><a data-fancybox="modalQuizTwo" data-src="#modalQuizTwo" href="javascript:;" style="display: none !important;"></a>
 		<div class="modal-container modal-big" id="contacts">
 			<div class="modal-content">
 				<div class="modal-title">связаться с нами</div>
@@ -483,7 +498,7 @@
 			<div class="modal-content">
 				<div class="modal-title">Это вход в на платформу<br> конференции EdCrunch 2020</div>
 				<div class="modal-content-text">
-					<p><b>11–13 ноября</b> здесь будет вестись трансляция мероприятий. Уже сейчас здесь можно общаться с другими пользователями и добавлять в избранное мероприятия и контакты.</p>
+					<p><b>8–10 декабря</b> здесь будет вестись трансляция мероприятий. Уже сейчас здесь можно общаться с другими пользователями и добавлять в избранное мероприятия и контакты.</p>
 					<p>Попасть сюда можно при наличии билета на конференцию. Логин и пароль приходят на почту сразу после его покупки или одобрения организаторами участия по квоте.</p>
 				</div>
 				<div class="modal-content-tabs">
@@ -557,7 +572,7 @@
 								<div class="modal-content-text">
 									<p><b>Если билета нет</b> — не откладывайте покупку, потому что первого<br> числа каждого месяца его стоимость растёт.</p>
 								</div>
-								<div class="clear"></div><a class="btn-blue modal-tab-btn" href="#" data-fancybox-close>Купить билет</a>
+								<div class="clear"></div><a class="btn-blue modal-tab-btn" href="home.html#buy">Купить билет</a>
 							</div>
 						</div>
 					</div>
@@ -594,6 +609,105 @@
 					<p>Мы отправили вам ссылку для восстановления пароля на почту. <br> Если письмо не пришло, проверьте папку «Спам» или свяжитесь<br> с нами.</p>
 					<div class="clear"></div><a class="btn-blue modal-tab-btn" href="#" data-fancybox-close>Связаться</a>
 				</div>
+			</div>
+		</div>
+		<div class="modal-container modal-big modal__quiz" id="modalQuiz">
+			<div class="modal-content modal__quiz-content">
+				<div class="modal-title modal__quiz-title">проверьте,<br> насколько вы продвинутый родитель?</div>
+				<form class="modal__quiz-form" method="post" action="#" id="test_form">
+					<div class="modal__quiz-body">
+						<div class="modal__quiz-question js-question-text"><span>С какого возраста ребёнку можно давать телефон?</span></div>
+						<ul class="modal__quiz-variants js-question-variants">
+							<li class="modal__quiz-col">
+								<input class="modal__quiz-radio" type="radio" id="ANSWER_1" name="answer" value="ANSWER_1">
+								<label class="modal__quiz-label" for="ANSWER_1">1 год и 3 месяца</label>
+							</li>
+							<li class="modal__quiz-col">
+								<input class="modal__quiz-radio" type="radio" id="ANSWER_2" name="answer" value="ANSWER_2">
+								<label class="modal__quiz-label" for="ANSWER_2">2 года</label>
+							</li>
+							<li class="modal__quiz-col">
+								<input class="modal__quiz-radio" type="radio" id="ANSWER_3" name="answer" value="ANSWER_3">
+								<label class="modal__quiz-label" for="ANSWER_3">5 лет</label>
+							</li>
+							<li class="modal__quiz-col">
+								<input class="modal__quiz-radio" type="radio" id="ANSWER_4" name="answer" value="ANSWER_4">
+								<label class="modal__quiz-label" for="ANSWER_4">Желательно уберечь ребёнка от гаджетов, пока не появится учебная необходимость</label>
+							</li>
+						</ul>
+						<div class="modal__quiz-add">
+							<label class="modal__quiz-add-label" for="answerAdd">Вы можете дополнить комментарием свой ответ</label>
+							<input class="modal__quiz-add-input" type="text" placeholder="Введите номер телефона" id="answerAdd">
+						</div>
+					</div>
+					<div class="modal__quiz-footer">
+						<div class="modal__quiz-result quiz-result-success is-show">
+							<div class="modal__quiz-result-title">Верно!</div>
+							<div class="modal__quiz-result-text">
+								<p>С этого возраста можно давать ребёнку играть с телефоном и показывать передачи для самых маленьких.<br> Такие  <a href="#">рекомендации даёт Американская академия педиатрии</a></p>
+							</div>
+						</div>
+						<div class="modal__quiz-next js-question-next">
+							<div>
+								<button class="btn-blue btn-contact submit-speakers btn-quiz-next" type="submit">Продолжить</button>
+							</div>
+						</div>
+					</div>
+				</form>
+			</div>
+		</div>
+		<div class="modal-container modal-big modal__quiz" id="modalQuizTwo">
+			<div class="modal-content modal__quiz-content">
+				<div class="modal-title modal__quiz-title">проверьте,<br> насколько вы продвинутый родитель?</div>
+				<form class="modal__quiz-form" method="post" action="#" id="test_form">
+					<div class="modal__quiz-body">
+						<div class="modal__quiz-body-result">
+							<div class="modal__quiz-body-result--title">Ваш результат: <b>4 из 6</b></div>
+							<div class="modal__quiz-body-result--line">
+								<div class="modal__quiz-body-result--line-box" style="width: 66%;"></div>
+							</div>
+							<div class="modal__quiz-body-result--dashed"><span></span><span></span><span></span></div>
+						</div>
+						<div class="modal__quiz-body-social">
+							<div class="modal__quiz-body-social--title">Поделиться в соцсетях</div>
+							<ul class="modal__quiz-body-social-list">
+								<li><a href="#">
+										<svg class="icon-ok-quiz">
+											<use xlink:href="images/sprites.svg#icon-ok-quiz"></use>
+										</svg></a></li>
+								<li><a href="#">
+										<svg class="icon-tw-quiz">
+											<use xlink:href="images/sprites.svg#icon-tw-quiz"></use>
+										</svg></a></li>
+								<li><a href="#">
+										<svg class="icon-in-quiz">
+											<use xlink:href="images/sprites.svg#icon-in-quiz"></use>
+										</svg></a></li>
+								<li><a href="#">
+										<svg class="icon-vk-quiz">
+											<use xlink:href="images/sprites.svg#icon-vk-quiz"></use>
+										</svg></a></li>
+								<li><a href="#">
+										<svg class="icon-fb-quiz">
+											<use xlink:href="images/sprites.svg#icon-fb-quiz"></use>
+										</svg></a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="modal__quiz-footer">
+						<div class="modal__quiz-result is-show">
+							<div class="modal__quiz-result-text">
+								<p>Для родителей, которые хотят раскрыть потенциал ребёнка. Представителей детских садов, школ и университетов, которые хотят соответствовать времени. Бизнесов, которые хотят быть ближе к клиентам. Корпораций, которые предпочитают развитие хантингу.</p>
+								<p>Подробности на <a href="#">сайте EdCrunch</a></p>
+							</div>
+						</div>
+						<div class="modal__quiz-next js-question-next">
+							<div>
+								<button class="btn-blue btn-contact submit-speakers" type="submit">Перейти</button>
+							</div>
+						</div>
+					</div>
+				</form>
 			</div>
 		</div>
 		<div class="nav__container nav__container-js">
@@ -639,11 +753,11 @@
 			</div>
 			<div class="nav-hide"></div>
 		</div>
-		<script src="js/lazyimage.js?v=1600427280222"></script>
-		<script src="js/lazyanimation.js?v=1600427280222"></script>
-		<script src="js/vendor.js?v=1600427280222"></script>
-		<script src="js/main.js?v=1600427280222"></script>
-		<script src="js/common.js?v=1600427280222"></script>
-		<script src="js/jquery.fancybox.min.js?v=1600427280222"></script>
+		<script src="js/lazyimage.js?v=1601729540118"></script>
+		<script src="js/lazyanimation.js?v=1601729540118"></script>
+		<script src="js/vendor.js?v=1601729540118"></script>
+		<script src="js/main.js?v=1601729540118"></script>
+		<script src="js/common.js?v=1601729540118"></script>
+		<script src="js/jquery.fancybox.min.js?v=1601729540118"></script>
 	</body>
 </html>
