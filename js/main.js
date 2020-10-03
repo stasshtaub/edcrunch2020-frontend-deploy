@@ -2,8 +2,8 @@
 /*!************************!*\
   !*** ./src/js/main.js ***!
   \************************/
-/*! no exports provided */function(e,r,n){"use strict";n.r(r);n(/*! ./vendor */"./src/js/vendor.js")},"./src/js/vendor.js":
+/*! no exports provided */function(e,r,n){"use strict";n.r(r),n(/*! ./vendor */"./src/js/vendor.js")},"./src/js/vendor.js":
 /*!**************************!*\
   !*** ./src/js/vendor.js ***!
   \**************************/
-/*! no exports provided */function(e,r,n){"use strict";n.r(r);n(/*! @babel/polyfill */"./node_modules/@babel/polyfill/lib/index.js");var t=n(/*! svg4everybody */"./node_modules/svg4everybody/dist/svg4everybody.js"),o=n.n(t),s=n(/*! jquery */"./node_modules/jquery/dist/jquery.js"),i=n.n(s);n(/*! slick-slider */"./node_modules/slick-slider/slick/slick.js");o()(),window.$=i.a,window.jQuery=i.a,n(/*! ninelines-ua-parser */"./node_modules/ninelines-ua-parser/dist/ninelines-ua-parser.js")}});
+/*! no exports provided */function(e,r,n){"use strict";n.r(r),n(/*! @babel/polyfill */"./node_modules/@babel/polyfill/lib/index.js");var t=n(/*! svg4everybody */"./node_modules/svg4everybody/dist/svg4everybody.js"),o=n.n(t),s=n(/*! jquery */"./node_modules/jquery/dist/jquery.js"),i=n.n(s);n(/*! slick-slider */"./node_modules/slick-slider/slick/slick.js"),o()(),window.$=i.a,window.jQuery=i.a,n(/*! ninelines-ua-parser */"./node_modules/ninelines-ua-parser/dist/ninelines-ua-parser.js")}});

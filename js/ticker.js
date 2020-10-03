@@ -1,11 +1,1 @@
-const tickers = document.querySelectorAll('.test-ticker');
-console.log(tickers);
-
-
-tickers.forEach(ticker => {
-    let tickerInline = ticker.querySelector('.test-ticker__inline');
-    console.log(tickerInline);
-    
-    let cloneInline = tickerInline.cloneNode(true);
-    ticker.append(cloneInline)
-});
+const tickers=document.querySelectorAll(".test-ticker");console.log(tickers),tickers.forEach(e=>{let t=e.querySelector(".test-ticker__inline");console.log(t);let c=t.cloneNode(!0);e.append(c)});
