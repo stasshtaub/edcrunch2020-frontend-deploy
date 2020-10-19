@@ -38,14 +38,13 @@
 		<link rel="preload" href="fonts/HalvarBreit-Bd.woff2" as="font" type="font/woff2" crossorigin>
 		<link rel="preload" href="fonts/HalvarBreit-Rg.woff2" as="font" type="font/woff2" crossorigin>
 		<link rel="stylesheet" href="css/critical-fonts.css">
-		<link rel="preload" href="fonts/Inter-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
-		<link rel="preload" href="fonts/Inter-Regular.woff2" as="font" type="font/woff2" crossorigin>
 		<link rel="preload" href="fonts/HalvarStnclBreit-ThMidG.woff2" as="font" type="font/woff2" crossorigin>
 		<link rel="preload" href="fonts/Halvar-Breitschrift-Medium.woff2" as="font" type="font/woff2" crossorigin>
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&amp;display=swap">
-		<link rel="stylesheet" href="css/main.css?v=1601680667356">
-		<link rel="stylesheet" href="css/lk-header.css?v=1601680667356">
-		<link rel="stylesheet" href="css/jquery.fancybox.min.css?v=1601680667356">
+		<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&amp;display=swap">
+		<link rel="stylesheet" href="css/main.css?v=1603113871714">
+		<link rel="stylesheet" href="css/lk-header.css?v=1603113871714">
+		<link rel="stylesheet" href="css/jquery.jscrollpane.css?v=1603113871714">
+		<link rel="stylesheet" href="css/jquery.fancybox.min.css?v=1603113871714">
 	</head>
 	<body>
 		<header class="lk__header">
@@ -137,11 +136,12 @@
 									<div class="event-wrap-main">
 										<div class="event__content agendaProgramBlock event__content-child">
 											<div class="event__content-tags">
-												<ul class="event-content-tags-list">
-													<li><a class="event-content-tag-btn" href="#">Корпоративное обучение</a></li>
-													<li><a class="event-content-tag-btn" href="#">EdTech</a></li>
-													<li><a class="event-content-tag-btn" href="#">Workshop</a></li>
-												</ul>
+												<div class="event__content-tags-container scroll-pane">
+													<ul class="event-content-tags-list">
+														<li><a class="event-content-tag-btn" href="#">Корпоративное обучение</a></li>
+														<li><a class="event-content-tag-btn" href="#">EdTech</a></li>
+													</ul>
+												</div>
 											</div>
 											<div class="event__content-header">
 												<div class="agenda__program-event-hashtag-header">
@@ -267,21 +267,21 @@
 									<div class="event-sidebar-right">
 										<div class="event-sidebar-block event-timer">
 											<div class="event-timer-title">До начала мероприятия <br> осталось:</div>
-											<ul class="event-timer-content">
+											<ul class="event-timer-content" id="clockdiv">
 												<li class="event-timer-item">
-													<div class="event-timer-val">26</div>
+													<div class="event-timer-val days">26</div>
 													<div class="event-timer-text">дней</div>
 												</li>
 												<li class="event-timer-item">
-													<div class="event-timer-val">15</div>
+													<div class="event-timer-val hours">15</div>
 													<div class="event-timer-text">часов</div>
 												</li>
 												<li class="event-timer-item">
-													<div class="event-timer-val">10</div>
+													<div class="event-timer-val minutes">10</div>
 													<div class="event-timer-text">минут</div>
 												</li>
 												<li class="event-timer-item">
-													<div class="event-timer-val">7</div>
+													<div class="event-timer-val seconds">7</div>
 													<div class="event-timer-text">секунд</div>
 												</li>
 											</ul>
@@ -487,11 +487,14 @@
 				</div>
 			</div>
 		</footer>
-		<script src="js/lazyimage.js?v=1601680667356"></script>
-		<script src="js/lazyanimation.js?v=1601680667356"></script>
-		<script src="js/vendor.js?v=1601680667356"></script>
-		<script src="js/main.js?v=1601680667356"></script>
-		<script src="js/common.js?v=1601680667356"></script>
-		<script src="js/jquery.fancybox.min.js?v=1601680667356"></script>
+		<script src="js/lazyimage.js?v=1603113871714"></script>
+		<script src="js/lazyanimation.js?v=1603113871714"></script>
+		<script src="js/vendor.js?v=1603113871714"></script>
+		<script src="js/main.js?v=1603113871714"></script>
+		<script src="js/common.js?v=1603113871714"></script>
+		<script src="js/jquery.mousewheel.js?v=1603113871714"></script>
+		<script src="js/jquery.jscrollpane.min.js?v=1603113871714"></script>
+		<script src="js/jscrollpane-init.js?v=1603113871714"></script>
+		<script src="js/jquery.fancybox.min.js?v=1603113871714"></script>
 	</body>
 </html>

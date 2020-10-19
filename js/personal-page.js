@@ -1,0 +1,1 @@
+$((function(){FilePond.create(document.querySelector("#uploadFile"),{labelIdle:'<span class="modal__upload-label--icon"></span><span class="modal__upload-label--text">Нажмите, <span class="modal__upload-label-text--v1">чтобы выбрать фото </span><span class="modal__upload-label-text--v2"><br> либо перетащите сюда</span></span>'})}));
